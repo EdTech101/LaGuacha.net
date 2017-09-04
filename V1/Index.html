@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>Granja Ecoturistica la guacha V-1.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  .bgimg {
+    background-image: url('images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .w3-jumbo {
+    font-size: 30px !important;
+  }
+
+  .audio {
+    padding: 20px;    
+  }
+  .audio:hover
+  {
+    cursor: pointer; 
+    cursor: hand; 
+  }
+
+  .fa-volume-off {
+    padding-left: 3px;
+  }
+
+  body,
+  html {
+
+    height: 100%;
+  }
+
+  #player {
+    height: 0px;
+    width: 0px;
+  }
+
+  .w3-display-middle {
+    position: relative;
+  }
+
+  .margin-top {
+    margin-top: 20%;
+  }
+</style>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white container-fluid">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="w3-display-topleft w3-padding-large w3-xlarge col-6">
+              <img src="images/positivo-negro.png" alt="logo" style="
+              max-height: 100px;
+              background-color: darkgray;
+              opacity: 0.4;">
+            </div>
+            <div class="col-6">
+              <i class="fa fa-volume-up pull-right audio" id="audio" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col margin-top">
+          <div class="row align-items-center">
+            <div class="col align-self-center">
+              <div class="justify-content-center">
+                <h1 class="w3-jumbo w3-animate-opacity text-center">Granja Ecoturistica la guacha V-1.0</h1>
+                <hr class="w3-border-grey" style="margin:auto;width:40%">
+                <p class="w3-large w3-center">Muy Pronto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="player"></div>
+  </div>
+  </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    var tag = document.createElement('script');
+    var readyflag = false;
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: '_NunaC_aBcw',
+        startSeconds: 2,
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      readyflag = true;
+      player.setLoop(true);
+      console.clear();
+      event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PAUSED && !done) {
+
+      }
+    }
+    function stopVideo() {
+      player.stopVideo();
+    }
+    $(document).ready(function () {
+      $("#audio").click(function () {
+        if (readyflag) {
+          player.isMuted() ? player.unMute() : player.mute();
+          $(this).toggleClass("fa-volume-up").toggleClass("fa-volume-off");
+        }
+      });
+      (function () {
+        $(window).on("blur focus", function (e) {
+          var prevType = $(this).data("prevType");
+          if (prevType != e.type) {   //  reduce double fire issues          
+            switch (e.type) {
+              case "blur":
+                player.pauseVideo();
+                $('#audio').toggleClass("fa-volume-up").toggleClass("fa-volume-off");
+                break;
+              case "focus":
+                player.playVideo();
+                player.setVolume(100);
+                $('#audio').toggleClass("fa-volume-up").toggleClass("fa-volume-off");
+                break;
+            }
+          }
+
+          $(this).data("prevType", e.type);
+        })
+      })();
+    });
+  </script>
+
+</body>
+
+</html>
