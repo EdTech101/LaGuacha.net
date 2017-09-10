@@ -1,23 +1,30 @@
-body,
-html {
-  height: 100%
+@font-face {
+    font-family: annieUse;
+    src: url(../fonts/AnnieUseYourTelescope.ttf);
 }
-
+@font-face {
+    font-family: segoepr;
+    src: url(../fonts/segoepr.ttf);
+}
 .w3-jumbo {
   font-size: 30px !important;
 }
 
 .audio {
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 5%;
+  margin-top: 3px;
+  position: fixed;
+  z-index: 3;
+  color: grey;
+  bottom: 0px;
+  right: 0px;
+
 }
 
 .audio:hover {
   cursor: pointer;
   cursor: hand;
-}
-
-.fa-volume-off {
-  padding-left: 3px;
 }
 
 body,
@@ -42,93 +49,26 @@ html {
 {
     width: 100%;
 }
-.imageMiddle
+
+body,
+html {
+
+  height: 100%;
+}
+
+#player {
+  height: 0px;
+  width: 0px;
+}
+
+.margin-top {
+  margin-top: 20%;
+}
+.main-container
 {
+    width: 100%;
     height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:150% 200%;
-    position: absolute; 
-}
-.topLanding 
-{
-    position:absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
-    background-repeat: no-repeat;
-    height: 30%;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-    background-position:100% 100%;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    background-size: 100%;
-
-}
-.footLanding
-{
-    position:absolute;
-    bottom: 0px;
-    z-index: 1;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco superior -41.svg");
-    background-repeat: no-repeat;
-    height: 30%;
-    width: 100%;
-    background-position:100% 100%;
-    background-size: 100%;
-}
-.logo
-{
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg");
-position: relative;
-}body,
-html {
-  height: 100%
-}
-
-.w3-jumbo {
-  font-size: 30px !important;
-}
-
-.audio {
-  padding: 20px;
-}
-
-.audio:hover {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.fa-volume-off {
-  padding-left: 3px;
-}
-
-body,
-html {
-
-  height: 100%;
-}
-
-#player {
-  height: 0px;
-  width: 0px;
-}
-
-.w3-display-middle {
-  position: relative;
-}
-
-.margin-top {
-  margin-top: 20%;
-}
-.main-container
-{
-    width: 100%;
-    height: 200%;
+    margin: 0px;
 }
 
 .imageMiddle
@@ -137,8 +77,8 @@ html {
     width: 100%;   
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:auto 100%;
-    position: absolute; 
+    background-size:100% 100%;
+    position: relative; 
     background-image: url('../images/mainBackground.jpg');
     z-index: -1;
 }
@@ -147,9 +87,8 @@ html {
     position:absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
     background-repeat: no-repeat;
-    height: 30%;
+    height: 250px;
     width: 100%;
-    top: 0px;
     z-index: 1;
     background-position:100% 100%;
     -webkit-transform: rotate(180deg);
@@ -157,58 +96,53 @@ html {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    background-size: contain;
-
+    background-size: 100%;
+    padding-top: 146px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .footLanding
 {
     position:absolute;
-    bottom: 0px;
+    bottom: -2px;
     z-index: 1;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco superior -41.svg");
     background-repeat: no-repeat;
     height: 30%;
     width: 100%;
     background-position:100% 100%;
-    background-size: contain;
+    background-size: 100%;
 }
 .logo
-{
-    background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg');
+{    
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg");
     position: relative;
-    height: 100%;
+    height: 100px;
     width: 15%;
-    background-position: 100% 100%;
-    background-position-x: 100%;
-    background-position-y: 100%;
+    background-position: 10% 20%;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    background-size: contain;
+    background-size: calc(190%/2);
     background-repeat: no-repeat;
-    margin: 152px 20px 176px 15%;
-    left: 0px;
 }
 .menu
 {
     background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg');
     position: relative;
-    height: 30%;
+    height: 90px;
     width: 15%;
-    background-position: 100% 100%;
-    background-position-x: 100%;
-    background-position-y: 100%;
+    background-position: 100% 0%;   
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-    background-size: contain;
+    background-size: calc(100%/2.3);
     background-repeat: no-repeat;
-    margin: 244px 0px 0px 0px;
-    left: 0px;
+    top: 14px;
 }
 .overlay
 {
@@ -227,41 +161,194 @@ html {
 {
  width: 43%;
  height: auto;
- margin: 30% 30% 0px 30%;
+ margin: calc(50%/2) auto 0px 0px;
+}
+.divider
+{
+    font-family: annieUse;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    font-size: 2.5em;
+    letter-spacing: 17px;
+    padding: 2% 0px 2% 0px;
+
+}
+.section
+{
+    height: 100%;
+    width: 100%;   
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    position: relative; 
+    z-index: -1;
+    font-weight: lighter;
+}
+.theFarmTop
+{
+    position:absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background blanco-22.svg");
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 100%;
+    top: -2px;
+    z-index: 1;
+    background-position:100% 100%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-size: 100%;
+}
+.theFarm
+{
+    height: 100%;
+    background-color: #DBC6B5;
+}
+.guacha
+{
+    height: 100%;
+    width: auto;
+    padding: 5% 0% 0% 0%;  
+    position: absolute;
+    right: 0px;
+    display: inline;   
+}
+.mision
+{
+    margin-top: 10%;
+    padding-top: 15%;
+    font-family: annieUse;
+    font-size: 4em;
+}
+.Tittle
+{
+    width: 35%;
+    margin-left: 13%;
+    border-bottom-color: green;
+    border-bottom-style: solid;
+    border-bottom-width: .5px;
+    padding-left: 20px;
+}
+.content
+{
+    font-family: Calibri;    
+    max-width: 35%;
+    word-break:keep-all;
+    margin-left: 13%;
+    padding-top: 20px;
+    font-size: large;
+}
+.circle-Button
+{
+    background-color: #513528;
+    border-radius: 50%;
+    color: white;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin-top: 100px;
+}
+.left-Button
+{
+    margin-left: 5%;
+    padding-right: 5px;
+}
+.right-Button
+{
+    margin-right: 5%;
+    padding-left: 5px;
 }
 
- @media (max-height: 1138px) {
+.content-footer
+{    
+    font-size: small;
+    max-width: 35%;
+    margin-left: 13%;
+}
+.button-footer
+{
+    margin: 0px;
+    background-color: #BAAA9A;
+    padding:5px;
+}
+.objectives
+{
+    background-color: #603626;
+    height: auto;
+    color:white;
+    font-family: Calibri;
+    letter-spacing: 17px;
+    padding: 4% 0px 4% 0px;
+}
+.objectivesfoot
+{
+    position:absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background marron objetivos estrategicos-01.svg");
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 100%;
+    top: -2px;
+    z-index: 1;
+    background-position:100% 100%;
+    background-size: 100%;
+}
+.objetives-container
+{
+    height: 50%;
+}
+
+@media(max-height:900px) and (min-width:1000px) {
+      
+    .topLanding
+    {
+        background-position:100% 100%;
+        -webkit-transform: rotate(180deg) scaleY(.6);
+        -moz-transform: rotate(180deg) scaleY(.6);
+        -ms-transform:rotate(180deg) scaleY(.6);
+        -o-transform: rotate(180deg) scaleY(.6);
+        transform: rotate(180deg) scaleY(.6);
+        top:-50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footLanding
+    {
+        background-position:100% 100%;
+        -webkit-transform: scaleY(.6);
+        -moz-transform: scaleY(.6);
+        -ms-transform:scaleY(.6);
+        -o-transform:scaleY(.6);
+        transform: scaleY(.6);
+        bottom:-54px;
+    }
     .menu
     {
-        margin: 256px 0px 0px 0px;
-        height: 23%;
+        background-position: 100% 0%;
+        transform: rotate(180deg) scaleX(.6);
     }
     .logo
     {
-        margin: 230px 20px 176px 15%;
-        
-    }    
- }
- @media (max-height: 910px) {
-    .menu
-    {
-        margin: 209px 0px 0px 0px;
-        height: 23%;
+        transform: rotate(180deg) scaleX(.6);
+        background-size: 100%;    
     }
-    .logo
-    {
-        margin: 195px 20px 176px 15%;
+    .Main-Logo {
+        width: 43%;
+        height: auto;
+        margin: calc(100%/6) auto 0px 0px;
     }
- }
- @media (max-height: 684px) 
- {
-    .menu
+    .left-Button
     {
-        margin: 157px 0px 0px 0px;        
-    }  
-    .logo
+       transform: scaleX(.6);
+    }
+    .right-Button
     {
-        margin: 154px 20px 176px 15%;
-        
-    }  
+        transform: scaleX(.6);
+    }
+    .mision
+    {
+        padding-top: calc(25%/50); 
+    }
  }
