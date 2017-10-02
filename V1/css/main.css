@@ -2,95 +2,95 @@
     font-family: annieUse;
     src: url(../fonts/AnnieUseYourTelescope.ttf);
 }
+
 @font-face {
     font-family: segoepr;
     src: url(../fonts/segoepr.ttf);
 }
+
 .w3-jumbo {
-  font-size: 30px !important;
+    font-size: 30px !important;
 }
 
 .audio {
-  padding: 20px 20px 20px 20px;
-  margin: 5%;
-  margin-top: 3px;
-  position: fixed;
-  z-index: 3;
-  color: grey;
-  bottom: 0px;
-  right: 0px;
-
+    padding: 20px 20px 20px 20px;
+    margin: 5%;
+    margin-top: 3px;
+    position: fixed;
+    z-index: 3;
+    color: grey;
+    bottom: 0px;
+    right: 0px;
 }
 
 .audio:hover {
-  cursor: pointer;
-  cursor: hand;
+    cursor: pointer;
+    cursor: hand;
 }
 
 body,
 html {
-
-  height: 100%;
+    height: 100%;
 }
 
 #player {
-  height: 0px;
-  width: 0px;
+    height: 0px;
+    width: 0px;
 }
 
 .w3-display-middle {
-  position: relative;
+    position: relative;
 }
 
 .margin-top {
-  margin-top: 20%;
+    margin-top: 20%;
 }
-.main-container
-{
+
+.main-container {
     width: 100%;
 }
 
 body,
 html {
-
-  height: 100%;
+    height: 100%;
 }
 
 #player {
-  height: 0px;
-  width: 0px;
+    height: 0px;
+    width: 0px;
 }
 
 .margin-top {
-  margin-top: 20%;
+    margin-top: 20%;
 }
-.main-container
-{
+
+.main-container {
     width: 100%;
     height: 100%;
     margin: 0px;
 }
 
-.imageMiddle
-{
+.imageMiddle {
     height: 100%;
-    width: 100%;   
+    width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:100% 100%;
-    position: relative; 
+    background-size: 100% auto;
+    position: relative;
     background-image: url('../images/mainBackground.jpg');
     z-index: -1;
+    background-position-x: center;
+    background-position-y: center;
 }
-.topLanding 
-{
-    position:absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg"); 
+
+.topLanding {
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
     background-repeat: repeat-x;
     height: 250px;
     width: 100%;
     z-index: 1;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -101,20 +101,20 @@ html {
     padding-left: 3%;
     padding-right: 3%;
 }
-.footLanding
-{
-    position:absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg"); 
+
+.footLanding {
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
     bottom: -2px;
     z-index: 1;
-   background-repeat: repeat-x;
-    height: 30%;
+    background-repeat: no-repeat;
+    height: 200px;
     width: 100%;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     background-size: 100%;
 }
-.logo
-{    
+
+.logo {
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg");
     position: relative;
     height: 100px;
@@ -128,13 +128,13 @@ html {
     background-size: calc(190%/2);
     background-repeat: no-repeat;
 }
-.menu
-{
+
+.menu {
     background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg');
     position: relative;
     height: 90px;
     width: 15%;
-    background-position: 100% 0%;   
+    background-position: 100% 0%;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -144,27 +144,29 @@ html {
     background-repeat: no-repeat;
     top: 14px;
 }
-.overlay
-{
-    position: absolute; 
+
+.overlay {
+    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(59, 32, 17, 0.70); /* Black background with opacity */
-    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: rgba(59, 32, 17, 0.70);
+    /* Black background with opacity */
+    z-index: 0;
+    /* Specify a stack order in case you're using a different order for other elements */
 }
-.Main-Logo
-{
- width: 43%;
- height: auto;
- margin: calc(50%/2) auto 0px 0px;
+
+.Main-Logo {
+    width: 43%;
+    height: auto;
+    margin: calc(50%/2) auto 0px 0px;
 }
-.divider
-{
-    color: #776e63; 
+
+.divider {
+    color: #776e63;
     font-family: annieUse;
     height: 20%;
     width: 100%;
@@ -172,29 +174,29 @@ html {
     font-size: 2.5em;
     letter-spacing: 17px;
     padding: 2% 0px 2% 0px;
-
+    z-index: 3;
 }
-.section
-{
+
+.section {
     height: 100%;
-    width: 100%;   
+    width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:auto 100%;
-    position: relative; 
+    background-size: auto 100%;
+    position: relative;
     z-index: -1;
     font-weight: lighter;
 }
-.theFarmTop
-{
-    position:absolute;
+
+.theFarmTop {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background blanco-22.svg");
     background-repeat: repeat-x;
     height: 20%;
     width: 100%;
     top: -2px;
     z-index: 1;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -202,30 +204,30 @@ html {
     transform: rotate(180deg);
     background-size: 100%;
 }
-.theFarm
-{
+
+.theFarm {
     height: 100%;
     background-color: #dbc6b4;
-    color: #776e63; 
+    color: #776e63;
 }
-.guacha
-{
+
+.guacha {
     height: 100%;
     width: auto;
-    padding: 5% 0% 0% 0%;  
+    padding: 5% 0% 0% 0%;
     position: absolute;
     right: 0px;
-    display: inline;   
+    display: inline;
 }
-.mision
-{
+
+.mision {
     margin-top: 10%;
     padding-top: 15%;
     font-family: annieUse;
     font-size: 4em;
 }
-.Tittle
-{
+
+.Tittle {
     width: 35%;
     margin-left: 13%;
     border-bottom-color: #369040;
@@ -233,18 +235,18 @@ html {
     border-bottom-width: .5px;
     padding-left: 20px;
 }
-.content
-{
-    font-family: Calibri;    
+
+.content {
+    font-family: Calibri;
     max-width: 35%;
-    word-break:keep-all;
+    word-break: keep-all;
     margin-left: 13%;
     padding-top: 20px;
     font-size: large;
 }
-.circle-Button
-{
-    background-color: rgba(81,54,2,0.70);
+
+.circle-Button {
+    background-color: rgba(81, 54, 2, 0.70);
     border-radius: 50%;
     color: white;
     height: 35px;
@@ -252,115 +254,114 @@ html {
     text-align: center;
     margin-top: 100px;
 }
-.left-Button
-{
+
+.left-Button {
     margin-left: 5%;
     padding-right: 5px;
 }
-.right-Button
-{
+
+.right-Button {
     margin-right: 5%;
     padding-left: 5px;
 }
 
-.content-footer
-{    
+.content-footer {
     font-size: small;
     max-width: 35%;
     margin-left: 13%;
 }
-.button-footer
-{
+
+.button-footer {
     margin: 0px;
     background-color: #baa99a;
-    padding:5px;
+    padding: 5px;
 }
-.objectives
-{
+
+.objectives {
     background-color: #603726;
     height: auto;
-    color:white;
+    color: white;
     font-family: Calibri;
     letter-spacing: 17px;
     padding: 4% 0px 4% 0px;
 }
-.objectives-top
-{
-    position:absolute;
+
+.objectives-top {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background marron objetivos estrategicos-01.svg");
     background-repeat: repeat-x;
-    height: 30%;
+    height: 200px;
     width: 100%;
     top: -2px;
     z-index: 1;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     background-size: 100%;
 }
-.objectives-foot
-{
-    position:absolute;
+
+.objectives-foot {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
-    height: 20%;
+    height: 120px;
     transform: rotate(180deg);
     width: 100%;
     bottom: -2px;
     z-index: 1;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     background-size: 100%;
 }
-.objetives-container
-{
-    height: 70%;
+
+.objetives-container {
+    height: 100%;
     background-image: url('../images/imagen.jpg');
     /* background-position-y: 200px; */
 }
-.tittle-middle
-{
-    padding-top: 200px;
-    color:#a55330;   
+
+.tittle-middle {
+    padding-top: 250px;
+    color: #a55330;
     font-size: 90px;
 }
-.segoepr
-{
-    font-family: segoepr;   
+
+.segoepr {
+    font-family: segoepr;
 }
-.reservations-container
-{
+
+.reservations-container {
     background-color: #f7eae2;
     background-image: none;
     height: 90%;
 }
-.reservations-top
-{
-    position:absolute;
+
+.reservations-top {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
-    height: 20%;
+    height: 120px;
     width: 100%;
     top: -20px;
     z-index: 1;
-    background-position:100% 100%;
+    background-position: 100% 100%;
     background-size: 100%;
 }
-.worm
-{
+
+.worm {
     width: 50%;
     height: 100%;
     margin-left: -100px;
 }
-.flowers-container
-{
+
+.flowers-container {
     background-image: url("../images/Mandevila Roja - Frente.jpg");
-    background-size: 100% 100%;
+    background-size: 100% auto;
     align-self: auto;
-    height: 130%;
+    height: 100%;
 }
-.flowers-top
-{
-    position:absolute;
+
+.flowers-top {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background rosa-24.svg");
-    height: 30%;
+    height: 200px;
     width: 100%;
     top: -20px;
     z-index: 1;
@@ -368,51 +369,316 @@ html {
     background-size: 101% 100%;
     background-position-y: 100%;
 }
-.flowers-footer
-{
-    position:absolute;
+
+.flowers-footer {
+    position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
     transform: rotate(180deg);
-    height: 30%;
+    height: 200px;
     width: 100%;
     bottom: -2px;
     z-index: 1;
-    background-size: 100% auto;   
+    background-size: 100% auto;
 }
+
+.events {
+    padding: 0px;
+    height: 50px;
+}
+
+.events-container {
+    background-image: none;
+    background-color: #603626;
+    padding-top: 13%;
+}
+
+.events-top {
+    top: -10px;
+    left: -2px;
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun blanco.svg");
+    height: 170px;
+    transform: rotate(180deg) rotate(180deg);
+    width: 100%;
+    z-index: 1;
+    background-size: 107% auto;
+    background-position-y: 92%;
+    background-position-x: 50%;
+}
+
+.next-events-container {
+    position: relative;
+    padding-top: 271px;
+    text-align: center;
+}
+
+.next-events-button {
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/matas de boton-29.svg");
+    width: 10%;
+    height: 300px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: 100%;
+    bottom: 15px;
+}
+
+.top-correction {
+    margin-top: -21px;
+}
+
+.tittle {
+    width: 10%;
+    height: 80%;
+    color: white;
+    font-size: 4em;
+}
+
+.antimargin {
+    margin: 0px -8% 0px -8%;
+}
+
+.right {
+    transform: rotate(180deg) rotateX(180deg);
+}
+
+.parrot-container {
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/imagenes/DSC07016 (1).JPG");
+}
+
+.parrot-top {
+    top: -22px;
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun marron-28.svg");
+    height: 220px;
+    transform: rotate(180deg) rotate(180deg);
+    width: 100%;
+    z-index: 1;
+    background-size: 107% auto;
+    background-position-y: 105%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.parrot-footer {
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 100%;
+    bottom: -2px;
+    z-index: 1;
+    background-position: 0px 20%;
+    background-size: 100%;
+}
+
+.form-top {
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 100%;
+    top: -2px;
+    z-index: 1;
+    background-position: 0px 100%;
+    background-size: 100%;
+}
+
+#exampleTextarea,
+#email-input,
+#name-input {
+    border-color: rgb(54, 144, 64);
+    background-color: #F9EEE8;
+    border-width: 3px;
+}
+
+#exampleTextarea:focus,
+#email-input:focus,
+#name-input:focus {
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(54, 144, 64, 0.98);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(54, 144, 64, 0.98);
+    box-shadow: 0px 0px 32px 0px rgba(54, 144, 64, 0.98);
+}
+
+.col-form-label {
+    color: #583829;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.contact-us {
+    padding-top: 30px;
+    height: 10%;
+}
+
+.form {
+    position: relative;
+    height: 120%;
+    background-color: #F9EEE8;
+}
+
+.form-container {
+    padding: 200px 0px 0px 0px;
+    margin: 0px 10% 0px 10%;
+}
+
+.icon-bar>div>* {
+    padding: 10px 10px 10px 10px;
+    background-color: #339040;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px 10px 30px 10px;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.footer {
+    height: 51%;
+    background-color: #F9EEE8;
+    position: relative;
+    color: white;
+}
+
+.back1,
+.back2,
+.back3 {
+    position: absolute;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 1-33.svg");
+    width: 100%;
+    height: 500px;
+    bottom: -50%;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    background-size: 101% auto;
+}
+
+.back2 {
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 2-34.svg");
+    z-index: 2;
+}
+
+.back3 {
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 3-32.svg");
+    z-index: 3;
+    padding-top: 17%;
+}
+
+.circle-footer {
+    color: #D5C0AB;
+}
+
+.col>h1 {
+    padding-left: 30px;
+    font-family: annieUse;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+i+i {
+    color: #96887B;
+}
+
+li {
+    margin-top: 10px;
+}
+
+#redes-sociales {
+    margin-top: 10px;
+}
+
+.height-fix {
+    height: 100%;
+    background-color: #6A5141;
+}
+
+div.row.justify-content-start>ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+div.row.justify-content-start>ul>li,
+.footer-icons {
+    padding: 0px 0px 0px 35px;
+}
+
+.menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 100;
+}
+
+.menu-bar {}
+
+.menu-height,
+.menu-height>* {
+    height: 100%;
+}
+
+.menu-line {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 150px;
+    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/linea verde de menu-18.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(245, 245, 245, 0.53);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+@media (max-width:600px) {
+    .tittle {
+        margin-top: -21px;
+    }
+}
+
 @media(max-height:900px) and (min-width:1000px) {
-      
-    .topLanding
-    {
-        background-position:100% 100%;
+    .topLanding {
+        background-position: 100% 100%;
         -webkit-transform: rotate(180deg) scaleY(.6);
         -moz-transform: rotate(180deg) scaleY(.6);
-        -ms-transform:rotate(180deg) scaleY(.6);
+        -ms-transform: rotate(180deg) scaleY(.6);
         -o-transform: rotate(180deg) scaleY(.6);
         transform: rotate(180deg) scaleY(.6);
-        top:-50px;
+        top: -50px;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .footLanding
-    {
-        background-position:100% 100%;
+    .footLanding {
+        background-position: 100% 100%;
         -webkit-transform: scaleY(.6);
         -moz-transform: scaleY(.6);
-        -ms-transform:scaleY(.6);
-        -o-transform:scaleY(.6);
+        -ms-transform: scaleY(.6);
+        -o-transform: scaleY(.6);
         transform: scaleY(.6);
-        bottom:-54px;
+        bottom: -54px;
     }
-    .menu
-    {
+    .menu {
         background-position: 100% 0%;
         transform: rotate(180deg) scaleX(.6);
     }
-    .logo
-    {
+    .logo {
         transform: rotate(180deg) scaleX(.6);
-        background-size: 100%;    
+        background-size: 100%;
         margin-top: -25px !important;
     }
     .Main-Logo {
@@ -420,16 +686,235 @@ html {
         height: auto;
         margin: calc(100%/6) auto 0px 0px;
     }
-    .left-Button
-    {
-       transform: scale(.8);
-    }
-    .right-Button
-    {
+    .left-Button {
         transform: scale(.8);
     }
-    .mision
-    {
-        padding-top: calc(25%/50); 
+    .right-Button {
+        transform: scale(.8);
     }
- }
+    .mision {
+        padding-top: calc(25%/50);
+    }
+    .main-button {
+        transform: scaleX(.6);
+    }
+}
+
+@media (max-width:1000px) {
+    .next-events-container>h3 {
+        font-size: 30px;
+    }
+    .tittle {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:700px) {
+    .tittle {
+        font-size: 2em;
+    }
+}
+
+@media (max-width:1000px) and (min-height: 1000px) {
+    .tittle-middle {
+        padding-top: 350px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1600px) and (min-height: 700px) {
+    .tittle-middle {
+        padding-top: 320px;
+    }
+    .tittle-middle {
+        padding-top: 320px;
+    }
+    .content {
+        font-size: .5em;
+    }
+    .Tittle {
+        font-size: 1em;
+    }
+    .flowers-top {
+        background-size: 101% 118%;
+        background-position-y: -13%;
+    }
+    .flowers-footer {
+        bottom: -83px;
+    }
+}
+
+@media (max-width:1600px) and (min-height: 1000px) {
+    .parrot-container {
+        background-size: 120% auto;
+    }
+    .form {
+        height: 70%;
+    }
+    .events-container {
+        padding-top: 30%;
+    }
+    .events-top {
+        left: -2px;
+    }
+    .tittle-middle {
+        padding-top: 30%;
+    }
+    .tittle-middle {
+        height: auto;
+    }
+    .flowers-footer {
+        bottom: -53px;
+    }
+}
+
+@media (max-width:1280px) and (min-height:720px) {
+    .events-top {
+        left: -1px;
+    }
+    .tittle-middle {
+        padding-top: 310px;
+    }
+    .mision {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width:992px) and (max-width:1100px) {
+    .icon-bar>* {
+        margin: 0px 10px 0px 10px;
+    }
+    .col-form-label {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:1024px) and (min-height: 600px) {
+    .footer-icons {
+        padding-left: 15px;
+    }
+    .icon-bar>div {
+        margin: auto 10px auto 10px;
+    }
+    .footer-icons>* {
+        margin: auto 10px auto 10px;
+    }
+    .col-form-label {
+        font-size: 1.6em;
+    }
+    .events-top {
+        left: -.2px;
+    }
+    .logo {
+        margin-top: -6px !important;
+    }
+    .events-container {
+        padding-top: 26%;
+    }
+    .divider {
+        height: 10%;
+    }
+}
+
+@media (min-width:600px) and (max-width: 1300px) {
+    Main-Logo {
+        width: 70%;
+        margin: calc(150%/2) auto 0px 0px;
+    }
+}
+
+@media (max-width:600px) and (max-height: 1024px) {
+    .height-fix {
+        height: 110%;
+    }
+    .Main-Logo {
+        width: 70%;
+        margin: calc(150%/2) auto 0px 0px;
+    }
+    .imageMiddle {
+        background-size: auto 100%;
+    }
+    .topLanding>*,
+    .guacha,
+    .worm,
+    .fa-map-marker {
+        display: none !important;
+    }
+    .Tittle,
+    .content,
+    .content-footer {
+        max-width: 70%;
+        width: 70%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .Tittle {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+    .content {
+        font-size: .5em;
+    }
+    .mision {
+        margin: 0px;
+    }
+    .tittle-middle {
+        padding-top: 76%;
+        font-size: 93px;
+        word-break: break-word;
+    }
+    .objectives-foot {
+        bottom: -33px;
+    }
+    .reservations-top {
+        top: -38px;
+    }
+    .events-top {
+        top: -60px;
+    }
+    .events {
+        height: 1%;
+    }
+    .flowers-footer {
+        bottom: -27px;
+    }
+    .events-container {
+        padding-top: 79%;
+    }
+    .tittle {
+        font-size: 3em;
+        margin-left: -30px;
+    }
+    .top-correction {
+        margin-top: -20px !important;
+        margin-left: -9px !important;
+    }
+    .parrot-footer {
+        bottom: -100px;
+    }
+    .form-top {
+        top: -110px;
+    }
+    .form {
+        height: 85%;
+    }
+    .icon-bar,
+    .footer-icons {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .footer-icons>* {
+        text-align: center !important;
+    }
+}
+
+@media (max-width:760px) and (max-height:620px) {
+    .objectives-foot {
+        bottom: -10px;
+    }
+    .imageMiddle {
+        background-size: auto 100%;
+    }
+}
