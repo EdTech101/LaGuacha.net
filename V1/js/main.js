@@ -1,4 +1,4 @@
-var tag = document.createElement('script');
+/* var tag = document.createElement('script');
 var readyflag = false;
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -67,4 +67,21 @@ $(document).ready(function () {
       $(this).data("prevType", e.type);
     })
   })();
+}); */
+
+//Trigger de menu
+
+
+
+
+$(document).ready(function() {
+    $("a#menu-icon-trigger").on("click", function() {
+        var menu = $(".menu-overlay,.menu-bar")
+            .toggleClass("no-show");
+        var toogleMenu = function() {
+            menu.toggleClass("show");
+        };
+        setTimeout(toogleMenu, 10);
+
+    });
 });
