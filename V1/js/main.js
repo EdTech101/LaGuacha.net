@@ -75,13 +75,36 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
-    $("a#menu-icon-trigger").on("click", function() {
-        var menu = $(".menu-overlay,.menu-bar")
-            .toggleClass("no-show");
-        var toogleMenu = function() {
-            menu.toggleClass("show");
-        };
-        setTimeout(toogleMenu, 10);
+    var menuOpen = false;
+    var menu = $(".menu-overlay,.menu-bar");
 
-    });
+    function hidder() {
+        menu.toggleClass("no-show").removeClass("show");
+        $(".menu-bar").removeClass("w3-out-right");
+    }
+
+    function openMenu() {
+        hidder();
+        setTimeout(toogleMenu, 10);
+    }
+
+    function closeMenu() {
+        if (menuOpen) {
+            $(".menu-bar").addClass("w3-out-right");
+            setTimeout(hidder, 1000)
+            $(".menu-bar").toggleClass("w3-animate-right w3-animate-opacity");
+            $("a#menu-icon-trigger").fadeIn();
+            menuOpen = false;
+        };
+    }
+
+    function toogleMenu() {
+        menuOpen = true;
+        menu.addClass("show");
+        $(".menu-bar").toggleClass("w3-animate-right w3-animate-opacity");
+        $("a#menu-icon-trigger").fadeOut();
+        $(".close-button").on("click", closeMenu);
+    };
+
+    $("a#menu-icon-trigger").on("click", openMenu);
 });

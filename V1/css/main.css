@@ -29,7 +29,8 @@
 }
 
 body,
-html {
+html,
+{
     height: 100%;
 }
 
@@ -143,6 +144,7 @@ html {
     background-size: calc(100%/2.39);
     background-repeat: no-repeat;
     top: 14px;
+    transition: opacity 1s ease-out;
 }
 
 .menu:hover {
@@ -151,7 +153,6 @@ html {
 }
 
 #menu-icon-trigger {
-    display: block;
     height: 100%;
 }
 
@@ -621,10 +622,11 @@ div.row.justify-content-start>ul>li,
     background-color: rgba(0, 0, 0, 0.70);
     z-index: 100;
     opacity: 0;
-    transition: opacity .1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 .no-show {
+    opacity: 0;
     display: none;
 }
 
@@ -633,7 +635,6 @@ div.row.justify-content-start>ul>li,
 }
 
 .menu-bar {
-    margin-left: 150px;
     color: white;
     list-style-type: none;
     text-align: -webkit-left;
@@ -649,7 +650,7 @@ div.row.justify-content-start>ul>li,
 
 .menu-bar::before {
     position: absolute;
-    top: 22px;
+    top: -30px;
     left: 0px;
     height: 100%;
     width: 150px;
@@ -661,16 +662,17 @@ div.row.justify-content-start>ul>li,
 
 .menu-bar>li {
     line-height: 60px;
-    padding-left: 20%;
+    padding-left: 35%;
 }
 
 .menu-icon {
+    position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: rgb(54, 144, 64);
     position: absolute;
-    left: 40%;
+    left: 30%;
     background-position: center;
     background-size: 60px 60px;
 }
@@ -715,6 +717,23 @@ div.row.justify-content-start>ul>li,
     background-color: rgba(0, 0, 0, 0.30);
 }
 
+.height-hundred {
+    height: 100%;
+}
+
+.close-button {
+    background-image: url("../images/icon-close.png");
+    background-position: center;
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    cursor: hand;
+}
+
 @media (max-width:600px) {
     .tittle {
         margin-top: -21px;
@@ -754,7 +773,7 @@ div.row.justify-content-start>ul>li,
     .Main-Logo {
         width: 43%;
         height: auto;
-        margin: calc(80%/6) auto 0px 0px;
+        margin: calc(125%/6) auto 0px 0px;
     }
     .left-Button {
         transform: scale(.8);
@@ -904,17 +923,19 @@ div.row.justify-content-start>ul>li,
 }
 
 @media (max-width:768px) and (max-height: 1024px) {
+    .footer-icons {
+        padding: 0px 0px 0px 0px;
+    }
     .height-fix {
         height: 110%;
     }
     .Main-Logo {
         width: 70%;
-        margin: calc(150%/2) auto 0px 0px;
+        margin: calc(50%/2) auto 0px 0px;
     }
     .imageMiddle {
         background-size: auto 100%;
     }
-    .topLanding>*,
     .guacha,
     .worm,
     .fa-map-marker {
@@ -932,16 +953,19 @@ div.row.justify-content-start>ul>li,
         padding-bottom: 20px;
         padding-top: 20px;
         text-align: center;
-        font-size: 2em;
+        font-size: 1em;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .content {
         font-size: .5em;
+        margin-top: 0px;
+        text-align: justify;
     }
     .mision {
         margin: 0px;
     }
     .tittle-middle {
-        padding-top: 76%;
         font-size: 93px;
         word-break: break-word;
     }
@@ -960,16 +984,12 @@ div.row.justify-content-start>ul>li,
     .flowers-footer {
         bottom: -27px;
     }
-    .events-container {
-        padding-top: 79%;
-    }
     .tittle {
         font-size: 3em;
-        margin-left: -30px;
     }
     .top-correction {
         margin-top: -20px !important;
-        margin-left: -9px !important;
+        margin-left: 10px !important;
     }
     .parrot-footer {
         bottom: -100px;
@@ -1014,5 +1034,14 @@ div.row.justify-content-start>ul>li,
     }
     .height-fix {
         height: 120%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .parrot-footer {
+        bottom: -50px;
+    }
+    .form-top {
+        top: -90px;
     }
 }
