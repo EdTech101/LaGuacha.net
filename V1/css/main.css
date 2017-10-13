@@ -732,6 +732,7 @@ div.row.justify-content-start>ul>li,
     right: 0px;
     cursor: pointer;
     cursor: hand;
+    z-index: 10;
 }
 
 @media (max-width:600px) {
