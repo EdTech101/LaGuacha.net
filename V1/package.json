@@ -1,15 +1,19 @@
 {
-  "name": "V1",
+  "name": "laGuacha.net",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Pagina web la guacha",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edwin Veroes",
   "license": "ISC",
   "dependencies": {
-    "aos": "^2.2.0"
+    "aos": "^2.2.0",
+    "bootstrap": "^4.0.0-beta",
+    "bootstrap-datepicker": "^1.7.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
   }
 }
