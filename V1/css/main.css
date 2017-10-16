@@ -8,6 +8,16 @@
     src: url(../fonts/segoepr.ttf);
 }
 
+a {
+    color: white !important;
+}
+
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none !important;
+}
+
 .w3-jumbo {
     font-size: 30px !important;
 }
@@ -78,7 +88,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
-    background-image: url('../images/mainBackground.jpg');
+    background-image: url('../images/carousel/4.jpg');
     z-index: -1;
     background-position-x: center;
     background-position-y: center;
@@ -264,6 +274,11 @@ html {
     width: 35px;
     text-align: center;
     margin-top: 100px;
+}
+
+.circle-Button:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 .left-Button {
@@ -641,6 +656,7 @@ div.row.justify-content-start>ul>li,
     padding-left: 90px;
     font-size: 1.6em;
     opacity: 0;
+    float: center;
 }
 
 .menu-height,
@@ -650,8 +666,8 @@ div.row.justify-content-start>ul>li,
 
 .menu-bar::before {
     position: absolute;
-    top: -30px;
-    left: 0px;
+    top: -88px;
+    left: -50px;
     height: 100%;
     width: 150px;
     content: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/linea verde de menu-18.svg");
@@ -678,7 +694,7 @@ div.row.justify-content-start>ul>li,
 }
 
 .menu-bar>* {
-    margin: 60px auto 60px auto;
+    margin: 30px auto 30px auto;
 }
 
 .the-farm-icon {
@@ -774,7 +790,7 @@ div.row.justify-content-start>ul>li,
     .Main-Logo {
         width: 43%;
         height: auto;
-        margin: calc(125%/6) auto 0px 0px;
+        margin: calc(85%/6) auto 0px 0px;
     }
     .left-Button {
         transform: scale(.8);

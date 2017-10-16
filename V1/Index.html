@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
 
 <body>
     <div class="main-container">
@@ -19,86 +21,87 @@
             <span class="pull-right logo"></span>
             <a href="#" id="menu-icon-trigger"><span class="menu pull-left"></span></a>
         </div>
-        <div class="overlay text-center">
+        <div class="overlay text-center" id="overlay-carousel">
             <img class="Main-Logo img-fluid" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
         </div>
         <div class="footLanding">
-            <i class="fa fa-angle-left fa-2x circle-Button left-Button main-button" aria-hidden="true"></i>
-            <i class="fa fa-angle-right fa-2x circle-Button pull-right right-Button main-button" aria-hidden="true"></i>
+            <i class="fa fa-angle-left fa-2x circle-Button left-Button main-button" aria-hidden="true" id="landing-carousel-left"></i>
+            <i class="fa fa-angle-right fa-2x circle-Button pull-right right-Button main-button" aria-hidden="true" id="landing-carousel-right"></i>
         </div>
-        <div class="imageMiddle">
+        <div class="imageMiddle main-container">
         </div>
-        <div class="divider text-center">
-            LA GRANJA
-        </div>
-        <div class="section theFarm">
-            <div class="theFarmTop"></div>
-            <div class="mision pull-left" data-aos="fade-right" data-aos-delay="500">
-                <h1 class="Tittle">Misión</h1>
-                <p class="content"> Proporcionar un servicio de alta calidad en materia de producción agrícola y pecuaria con elevado sentido social, propiciando la conservación ambiental y la generación de espacios para el disfrute turístico.
-                </p>
-                <div class="content-footer">
-                    <i class="fa fa-angle-left fa-2x circle-Button left-Button button-footer" aria-hidden="true"></i>
-                    <i class="fa fa-angle-right fa-2x circle-Button right-Button pull-right button-footer" aria-hidden="true"></i>
-                </div>
-            </div>
-            <img class="guacha" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/imagen guacharaca-21.svg" alt="LaGuacha">
-            <div class="theFarmfoot"></div>
-        </div>
-        <div class="section objectives text-center">
-            <h2>OBJETIVOS ESTRATÉGICOS</h2>
-            <div>
-                <span> Image</span>
-                <span> Content</span>
+    </div>
+    <div class="divider text-center" id="theFarm">
+        LA GRANJA
+    </div>
+    <div class="section theFarm">
+        <div class="theFarmTop"></div>
+        <div class="mision pull-left" data-aos="fade-right" data-aos-delay="500">
+            <h1 class="Tittle">Misión</h1>
+            <p class="content"> Proporcionar un servicio de alta calidad en materia de producción agrícola y pecuaria con elevado sentido social, propiciando la conservación ambiental y la generación de espacios para el disfrute turístico.
+            </p>
+            <div class="content-footer">
+                <i class="fa fa-angle-left fa-2x circle-Button left-Button button-footer" aria-hidden="true"></i>
+                <i class="fa fa-angle-right fa-2x circle-Button right-Button pull-right button-footer" aria-hidden="true"></i>
             </div>
         </div>
-        <div class="imageMiddle objetives-container">
-            <div class="objectives-top">
-            </div>
-            <h2 class="text-center segoepr tittle-middle">Ven y Conócenos</h2>
-            <div class="objectives-foot">
-            </div>
+        <img class="guacha" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/imagen guacharaca-21.svg" alt="LaGuacha">
+        <div class="theFarmfoot"></div>
+    </div>
+    <div class="section objectives text-center">
+        <h2>OBJETIVOS ESTRATÉGICOS</h2>
+        <div>
+            <span> Image</span>
+            <span> Content</span>
         </div>
-        <h2 class="divider text-center">
-            RESERVACIONES
-        </h2>
-        <div class="imageMiddle reservations-container">
-            <div class="reservations-top"></div>
-            <img class="worm" data-aos="fade-right" data-aos-delay="300" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen gusano-25.svg" alt="gusano">
+    </div>
+    <div class="imageMiddle objetives-container">
+        <div class="objectives-top">
         </div>
-        <div class="imageMiddle flowers-container">
-            <div class="flowers-top"></div>
-            <div class="flowers-footer"></div>
+        <h2 class="text-center segoepr tittle-middle">Ven y Conócenos</h2>
+        <div class="objectives-foot">
         </div>
-        <h2 class="divider text-center events">
-            EVENTOS
-        </h2>
-        <div class="imageMiddle events-container container-fluid">
-            <div class="events-top">
-            </div>
-            <div class="row align-items-center height-hundred">
-                <span class="next-events-button left col-5">            
+    </div>
+    <h2 class="divider text-center" id="reservations">
+        RESERVACIONES
+    </h2>
+    <div class="imageMiddle reservations-container">
+        <div class="reservations-top"></div>
+        <img class="worm" data-aos="fade-right" data-aos-delay="300" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen gusano-25.svg" alt="gusano">
+    </div>
+    <div class="imageMiddle flowers-container">
+        <div class="flowers-top"></div>
+        <div class="flowers-footer"></div>
+    </div>
+    <h2 class="divider text-center events" id="events">
+        EVENTOS
+    </h2>
+    <div class="imageMiddle events-container container-fluid">
+        <div class="events-top">
+        </div>
+        <div class="row align-items-center height-hundred">
+            <span class="next-events-button left col-5">            
           </span>
-                <span class="align-self-center col-4 antimargin">
+            <span class="align-self-center col-4 antimargin">
          <div class="row"> 
             <span class="col tittle text-center">
            PRÓXIMOS
            </span>
-            </div>
-            <div class="row">
-                <span class="col tittle text-center top-correction">
+        </div>
+        <div class="row">
+            <span class="col tittle text-center top-correction">
             EVENTOS
           </span>
-            </div>
-            </span>
-            <span class="next-events-button right col-4"></span>
         </div>
+        </span>
+        <span class="next-events-button right col-4"></span>
+    </div>
     </div>
     <div class="imageMiddle parrot-container">
         <div class="parrot-top"></div>
         <div class="parrot-footer"></div>
     </div>
-    <h2 class="divider text-center contact-us">CONTÁCTANOS</h2>
+    <h2 class="divider text-center contact-us" id="contact-us">CONTÁCTANOS</h2>
     <div class="form">
         <div class="form-top"></div>
         <div class="form-container">
@@ -132,7 +135,7 @@
                             <div class="form-group row align-items-center">
                                 <label for="email-input" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">E-Mail</label>
                                 <div class="col-12 col-md-8 col-lg-9 col-sm-12">
-                                    <input class="form-control" id="email-input" type="email" placeholder="nombre@dominio.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
+                                    <input class="form-control" id="email-input" type="email" placeholder="nombre@dominio.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]{2,4}$/">
                                 </div>
                             </div>
                             <div class="form-group row align-items-top">
@@ -210,19 +213,19 @@
                                             <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
                                                     <i class="fa fa-twitter fa-1x text-center fa-stack-1x" aria-hidden="true"></i>                       
-                                                </span>
+                                            </span>
                                         </div>
                                         <div class="col-lg-2 col-md-3 col-2">
                                             <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
-                                                    <i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true">                          </i> 
-                                                </span>
+                                                    <i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true"></i>                         </i> 
+                                            </span>
                                         </div>
                                         <div class="col-lg-2 col-md-3 col-2">
                                             <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
-                                                    <i class="fa fa-instagram fa-1x text-center fa-stack-1x" aria-hidden="true"></i> 
-                                                </span>
+                                                <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
+                                                 <i class="fa fa-instagram fa-1x text-center fa-stack-1x" aria-hidden="true"></i> 
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -238,15 +241,25 @@
         <div class="container-fluid menu-height">
             <div class="row align-items-center">
                 <span class="close-button"></span>
-                <div class="col-lg-6 col-md-6 col-6 hidden-sm-down">
+                <div class="col-lg-7 col-md-6 col-6 hidden-sm-down">
                 </div>
-                <div class="col-lg-6 col-md-6 col-6" id="col-buttons">
+                <div class="col-lg-5 col-md-6 col-6" id="col-buttons">
                     <ul class="menu-bar no-show">
-                        <li><span class="menu-icon the-farm-icon"></span>La Granja</li>
-                        <li><span class="menu-icon reservations-icon"></span>Reservaciones</li>
-                        <li><span class="menu-icon events-icon "></span>Eventos</li>
-                        <li><span class="menu-icon gallery-icon"></span>Galería</li>
-                        <li><span class="menu-icon contact-icon"></span>Contacto</li>
+                        <li>
+                            <a href="#theFarm" class="close-action"><span class="menu-icon the-farm-icon"></span>La Granja</a>
+                        </li>
+                        <li>
+                            <a href="#reservations" class="close-action"><span class="menu-icon reservations-icon"></span>Reservaciones</a>
+                        </li>
+                        <li>
+                            <a href="#events" class="close-action"><span class="menu-icon events-icon "></span>Eventos</a>
+                        </li>
+                        <li>
+                            <a href="#theFarm" class="close-action"><span class="menu-icon gallery-icon"></span>Galería</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us" class="close-action"><span class="menu-icon contact-icon"></span>Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -257,9 +270,15 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="js/jquery.colors.js"></script>
+    <script src="js/smoothScrolling.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/main.js"></script>
 </body>
 
