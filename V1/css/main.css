@@ -88,7 +88,6 @@ html {
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
-    background-image: url('../images/carousel/4.jpg');
     z-index: -1;
     background-position-x: center;
     background-position-y: center;
@@ -100,7 +99,7 @@ html {
     background-repeat: repeat-x;
     height: 250px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-position: 100% 100%;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -176,8 +175,13 @@ html {
     bottom: 0;
     background-color: rgba(59, 32, 17, 0.70);
     /* Black background with opacity */
-    z-index: 0;
+    z-index: 1;
     /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.off {
+    opacity: 0 !important;
+    transition: ease-in 1s !important;
 }
 
 .Main-Logo {
@@ -196,6 +200,7 @@ html {
     letter-spacing: 17px;
     padding: 2% 0px 2% 0px;
     z-index: 3;
+    background-color: white;
 }
 
 .section {
@@ -243,26 +248,20 @@ html {
 
 .mision {
     margin-top: 10%;
-    padding-top: 15%;
+    padding-top: 8%;
     font-family: annieUse;
     font-size: 4em;
 }
 
 .Tittle {
-    width: 35%;
-    margin-left: 13%;
     border-bottom-color: #369040;
     border-bottom-style: solid;
     border-bottom-width: .5px;
-    padding-left: 20px;
 }
 
 .content {
     font-family: Calibri;
-    max-width: 35%;
     word-break: keep-all;
-    margin-left: 13%;
-    padding-top: 20px;
     font-size: large;
 }
 
@@ -293,8 +292,6 @@ html {
 
 .content-footer {
     font-size: small;
-    max-width: 35%;
-    margin-left: 13%;
 }
 
 .button-footer {
@@ -637,12 +634,11 @@ div.row.justify-content-start>ul>li,
     background-color: rgba(0, 0, 0, 0.70);
     z-index: 100;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s linear;
 }
 
 .no-show {
     opacity: 0;
-    display: none;
 }
 
 .show {
@@ -749,6 +745,56 @@ div.row.justify-content-start>ul>li,
     cursor: pointer;
     cursor: hand;
     z-index: 10;
+}
+
+.mision {
+    width: 100%;
+}
+
+.floating-menu {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(74, 55, 50, 0.7);
+    top: 5px;
+    right: 27px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.floating-menu-icon {
+    height: 55px;
+    padding: 5px 0px;
+}
+
+.carousel-main {
+    height: 100%;
+}
+
+.carousel-main>div {
+    height: 100%
+}
+
+.main-container>div.carousel-height {
+    padding: 29% 0px;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url('../images/carousel/4.jpg');
+}
+
+.img-2 {
+    background-image: url('../images/carousel/2.jpg');
+}
+
+.img-3 {
+    background-image: url('../images/carousel/3.jpg');
+}
+
+.img-4 {
+    background-image: url('../images/carousel/1.jpg');
 }
 
 @media (max-width:600px) {
@@ -885,7 +931,7 @@ div.row.justify-content-start>ul>li,
         padding-top: 310px;
     }
     .mision {
-        margin-top: 20%;
+        margin-top: 9%;
     }
 }
 
@@ -926,6 +972,10 @@ div.row.justify-content-start>ul>li,
     .imageMiddle {
         background-size: auto 100%;
     }
+    .main-container>div.carousel-height {
+        padding: 40% 0px;
+        background-size: 100% auto;
+    }
     .Main-Logo {
         width: 43%;
         margin: calc(170%/6) auto 0px 0px;
@@ -950,21 +1000,18 @@ div.row.justify-content-start>ul>li,
         width: 70%;
         margin: calc(50%/2) auto 0px 0px;
     }
-    .imageMiddle {
+    .imageMiddle,
+    {
+        background-size: auto 100%;
+    }
+    .main-container>div.carousel-height {
+        padding: 40% 0px;
         background-size: auto 100%;
     }
     .guacha,
     .worm,
     .fa-map-marker {
         display: none !important;
-    }
-    .Tittle,
-    .content,
-    .content-footer {
-        max-width: 70%;
-        width: 70%;
-        margin-top: 70px;
-        margin-bottom: 70px;
     }
     .Tittle {
         padding-bottom: 20px;
@@ -1034,6 +1081,10 @@ div.row.justify-content-start>ul>li,
     .imageMiddle {
         background-size: auto 100%;
     }
+    .main-container>div.carousel-height {
+        padding: 40% 0px;
+        background-size: auto 100%;
+    }
     .reservations-top {
         top: -40px;
     }
@@ -1060,5 +1111,294 @@ div.row.justify-content-start>ul>li,
     }
     .form-top {
         top: -90px;
+    }
+}
+
+@media(min-width:1024px) and (min-height:580px) {
+    .main-container>div.carousel-height {
+        padding: 40% 0px;
+        background-size: 100% auto;
+    }
+}
+
+@media(min-width:1600px) and (min-height:1200px) {
+    .divider {
+        height: 10%;
+    }
+    .events-container {
+        padding-top: 8%;
+    }
+}
+
+@media (max-width:1024px)and (max-height:1367px) {
+    .main-container>div.carousel-height {
+        padding: 70% 0px;
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width:690px) {
+    .hidden-lg-up {
+        display: none;
+    }
+}
+
+@media (max-width:690px) {
+    .form {
+        height: 143%;
+    }
+    .imageMiddle {
+        background-size: auto 100%;
+    }
+    .menu-overlay-mobile {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    }
+    .menu-icon {
+        left: 41%;
+        top: 28px;
+    }
+    .footer-icons>div {
+        margin: 0px;
+    }
+    .floating-menu {
+        bottom: 3px;
+        right: 4px;
+        top: auto;
+    }
+    .topLanding>* {
+        display: none;
+    }
+    .back1,
+    .back2,
+    .back3 {
+        height: 165px;
+    }
+    .footer {
+        height: 19%;
+    }
+    .height-fix {
+        height: 14%;
+    }
+    .hidden-lg-down {
+        display: none;
+    }
+    .main-container>div.carousel-height {
+        padding: 100% 0px;
+        background-size: auto 100%;
+    }
+    .content {
+        font-size: .4em;
+    }
+    .theFarm {
+        height: 140%;
+    }
+    .divider {
+        font-size: 2em;
+        letter-spacing: 4px;
+    }
+    .tittle-middle {
+        font-size: 4em
+    }
+    .objectives-top {
+        height: 100px;
+    }
+    .objectives-title {
+        letter-spacing: 4px;
+    }
+    .tittle {
+        font-size: 2em;
+        margin-left: -3px;
+    }
+    .col>h1 {
+        padding-left: 0px;
+        font-size: 1.5em;
+    }
+    .icon-bar>div>* {
+        margin: 0px;
+    }
+    .logo {
+        height: 117px;
+    }
+    .Main-Logo {
+        margin: calc(60%/2) auto 0px 0px;
+    }
+    .divider {
+        height: 10%;
+    }
+    .icon-bar {
+        margin-left: -55px !important;
+    }
+    .form-top {
+        top: -130px;
+    }
+    .contact-us {
+        padding-top: 14px;
+    }
+    .next-events-button {
+        height: 252px;
+    }
+    .top-correction {
+        margin-left: -3px !important;
+    }
+    .events-top {
+        top: -80px;
+    }
+    .events {
+        padding-top: 31px;
+    }
+    .reservations-top {
+        top: -80px;
+    }
+    .objectives-foot {
+        bottom: -70px;
+    }
+    .theFarm {
+        padding-top: 70px;
+    }
+}
+
+@media (min-height:480px) {
+    .theFarm {
+        padding-top: 40px;
+    }
+    .objectives-foot {
+        bottom: -75px;
+    }
+    .events-top {
+        top: -92px;
+    }
+}
+
+@media (max-width:333px) {
+    .back1,
+    .back2,
+    .back3 {
+        height: 109px;
+    }
+    .parrot-footer {
+        bottom: -108px;
+    }
+    .form-top {
+        top: -141px;
+    }
+    .parrot-top {
+        top: -135px;
+    }
+    .next-events-button {
+        background-size: cover;
+    }
+    .tittle {
+        font-size: 1.5em;
+        height: 42px;
+        margin-left: -13px;
+    }
+    .Main-Logo {
+        margin: calc(100%/2) auto 0px 0px;
+    }
+}
+
+@media (max-width:992px) {
+    .guacha,
+    .worm,
+    .fa-map-marker {
+        display: none !important;
+    }
+}
+
+@media (max-width:740px) and (max-height:420px) and (orientation: landscape) {
+    .Main-Logo {
+        width: 35%;
+        margin: calc(45%/2) auto 0px 0px;
+    }
+    .divider {
+        height: 15%;
+    }
+    .main-container>div.carousel-height {
+        padding: 40% 0px;
+    }
+    .imageMiddle {
+        background-size: 100% auto;
+    }
+    .tittle-middle {
+        padding-top: 170px;
+    }
+    .form-container {
+        padding: 51px 0px 0px 0px;
+    }
+    .height-fix {
+        height: 140%;
+    }
+    .footer {
+        height: 33%;
+    }
+    .back1,
+    .back2,
+    .back3 {
+        background-position: center -4px;
+        bottom: -39%;
+    }
+}
+
+@media (min-width:731px) and (max-width:742px) and (max-height:413px) and (orientation: landscape) {
+    .theFarm {
+        height: 135%;
+    }
+    .objetives-container {
+        height: 124%;
+    }
+    .tittle-middle {
+        padding-top: 190px;
+    }
+    .back1,
+    .back2,
+    .back3 {
+        bottom: -200%;
+    }
+    .form-container {
+        padding: 95px 0px 0px 0px;
+    }
+}
+
+@media (max-width:500px) and (max-height:300px) {
+    .theFarm {
+        padding-top: 0px;
+    }
+    .theFarm {
+        height: 200%;
+    }
+    .tittle-middle {
+        padding-top: 110px;
+    }
+    .form {
+        height: 192%;
+    }
+    .parrot-top {
+        top: -146px;
+    }
+    .imageMiddle.events-container.container-fluid {
+        z-index: 3;
+    }
+}
+
+@media (max-width:600px) and (max-height:300px) {
+    .theFarm {
+        height: 260%;
+    }
+    .content {
+        font-size: .3em;
+    }
+    .theFarm {
+        padding-top: 0px;
+    }
+    .divider {
+        height: 30%;
+    }
+}
+
+@media (max-width: 331px) and (max-height: 500px) {
+    .form {
+        height: 180%;
     }
 }

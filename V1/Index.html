@@ -16,6 +16,12 @@
 <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
 
 <body>
+    <div data-aos="fade-down" id="float-menu" data-aos-anchor="#trigger-right" class="floating-menu text-center hidden-lg-down">
+        <img class="floating-menu-icon" id="menu-icon-trigger" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
+    </div>
+    <div id="float-menu-mobile" class="floating-menu text-center hidden-lg-up">
+        <img class="floating-menu-icon" id="menu-icon-trigger-mobile" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
+    </div>
     <div class="main-container">
         <div class="topLanding">
             <span class="pull-right logo"></span>
@@ -28,31 +34,77 @@
             <i class="fa fa-angle-left fa-2x circle-Button left-Button main-button" aria-hidden="true" id="landing-carousel-left"></i>
             <i class="fa fa-angle-right fa-2x circle-Button pull-right right-Button main-button" aria-hidden="true" id="landing-carousel-right"></i>
         </div>
-        <div class="imageMiddle main-container">
+        <div class="carousel-main">
+            <div class="imageMiddle main-container">
+                <div class="carousel-height img-1"></div>
+            </div>
+            <div class="imageMiddle main-container">
+                <div class="carousel-height img-2"></div>
+            </div>
+            <div class="imageMiddle main-container">
+                <div class="carousel-height img-3"></div>
+            </div>
+            <div class="imageMiddle main-container">
+                <div class="carousel-height img-4"></div>
+            </div>
         </div>
     </div>
+    <span id="trigger-right">
+    </span>
     <div class="divider text-center" id="theFarm">
         LA GRANJA
     </div>
     <div class="section theFarm">
         <div class="theFarmTop"></div>
-        <div class="mision pull-left" data-aos="fade-right" data-aos-delay="500">
-            <h1 class="Tittle">Misión</h1>
-            <p class="content"> Proporcionar un servicio de alta calidad en materia de producción agrícola y pecuaria con elevado sentido social, propiciando la conservación ambiental y la generación de espacios para el disfrute turístico.
-            </p>
-            <div class="content-footer">
-                <i class="fa fa-angle-left fa-2x circle-Button left-Button button-footer" aria-hidden="true"></i>
-                <i class="fa fa-angle-right fa-2x circle-Button right-Button pull-right button-footer" aria-hidden="true"></i>
+        <div class="mision pull-left">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-1"></div>
+                    <div class="col col-12 col-lg-5 col-md-10">
+                        <div class="carousel-container">
+                            <div>
+                                <div class="elem">
+                                    <h1 class="Tittle">Misión</h1>
+                                    <p class="content"> Proporcionar un servicio de alta calidad en materia de producción agrícola y pecuaria con elevado sentido social, propiciando la conservación ambiental y la generación de espacios para el disfrute turístico.
+                                    </p>
+                                </div>
+                                <div class="elem">
+                                    <h1 class="Tittle">Vision</h1>
+                                    <p class="content">
+                                        Consolidarnos como una organización modelo a nivel nacional e internacional debido a la integración armónica de la actividad productiva del campo con elementos esencialmente ecológicos y de promoción turística, privilegiando el uso de los recursos locales
+                                        y la autosostenibilidad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-2 col-md-2 col-lg-1"></div>
+                    <div class="col col-8 col-lg-5 col-sm-8 col-md-8">
+                        <div class="content-footer">
+                            <i class="fa fa-angle-left fa-2x circle-Button left-Button button-footer mision-button-left" aria-hidden="true"></i>
+                            <i class="fa fa-angle-right fa-2x circle-Button right-Button pull-right button-footer mision-button-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <img class="guacha" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/imagen guacharaca-21.svg" alt="LaGuacha">
         <div class="theFarmfoot"></div>
     </div>
-    <div class="section objectives text-center">
-        <h2>OBJETIVOS ESTRATÉGICOS</h2>
-        <div>
-            <span> Image</span>
-            <span> Content</span>
+    <div class="section objectives text-center container-fluid">
+        <div class="row">
+            <div class="col col-12">
+                <h2 class="objectives-title">OBJETIVOS ESTRATÉGICOS</h2>
+            </div>
+            <div class="col col-12">
+                <div class="row carousel-objectives">
+                    <div class="col col-4">
+                        <div class="row"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="imageMiddle objetives-container">
@@ -133,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="form-group row align-items-center">
-                                <label for="email-input" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">E-Mail</label>
+                                <label for="email-input" class="col-4 col-lg-3 col-md-4 col-sm-12 col-form-label">E-Mail</label>
                                 <div class="col-12 col-md-8 col-lg-9 col-sm-12">
                                     <input class="form-control" id="email-input" type="email" placeholder="nombre@dominio.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]{2,4}$/">
                                 </div>
@@ -153,7 +205,7 @@
             <div class="back1"></div>
             <div class="back2"></div>
             <div class="back3">
-                <div class="container-fluid height-fix">
+                <div class="container-fluid height-fix hidden-lg-down">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-6">
                             <div class="row justify-content-center">
@@ -233,9 +285,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid height-fix hidden-lg-up">
+                    <div class="row justify-content-center">
+                        <div class="col col-12">
+                            <div class="footer-icons row justify-content-start">
+                                <div class="col-lg-2 col-md-3 col-4">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
+                                        <i class="fa fa-twitter fa-1x text-center fa-stack-1x" aria-hidden="true"></i>                       
+                                    </span>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-4">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
+                                        <i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true"></i>                
+                                    </span>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-4">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
+                                        <i class="fa fa-instagram fa-1x text-center fa-stack-1x" aria-hidden="true"></i> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="overlay menu-overlay text-center no-show">
         <div class="container-fluid menu-height">
@@ -252,7 +329,7 @@
                             <a href="#reservations" class="close-action"><span class="menu-icon reservations-icon"></span>Reservaciones</a>
                         </li>
                         <li>
-                            <a href="#events" class="close-action"><span class="menu-icon events-icon "></span>Eventos</a>
+                            <a href="#events" class="close-action"><span class="menu-icon events-icon"></span>Eventos</a>
                         </li>
                         <li>
                             <a href="#theFarm" class="close-action"><span class="menu-icon gallery-icon"></span>Galería</a>
@@ -262,6 +339,17 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay menu-overlay-mobile text-center">
+        <div class="container-fluid menu-height">
+            <div class="row align-items-top">
+                <div class="col col-12"><a href="#theFarm" class="close-action">La Granja<span class="menu-icon the-farm-icon"></span></a></div>
+                <div class="col col-12"><a href="#reservations" class="close-action">Reservaciones<span class="menu-icon reservations-icon"></span></a></div>
+                <div class="col col-12"><a href="#events" class="close-action">Eventos<span class="menu-icon events-icon"></span></a></div>
+                <div class="col col-12"><a href="#theFarm" class="close-action">Galería<span class="menu-icon gallery-icon"></span></a></div>
+                <div class="col col-12"><a href="#contact-us" class="close-action">Contacto<span class="menu-icon contact-icon"></span></a></div>
             </div>
         </div>
     </div>
@@ -279,6 +367,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/player.js"></script>
+    <script src="js/slickInit.js"></script>
     <script src="js/main.js"></script>
 </body>
 

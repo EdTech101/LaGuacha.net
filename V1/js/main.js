@@ -3,4 +3,5 @@ $(document).ready(function() {
     player();
     carousel();
     smoothScroll();
+    slickInit();
 });
