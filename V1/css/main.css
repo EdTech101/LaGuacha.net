@@ -378,8 +378,8 @@ html {
 
 .worm {
     width: 50%;
-    height: 100%;
     margin-left: -100px;
+    margin-top: 110px;
 }
 
 .flowers-container {
