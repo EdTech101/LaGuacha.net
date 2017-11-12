@@ -48,6 +48,11 @@ function menu() {
     function openMenuMobile() {
         if (!menuOpen) {
             $(".menu-overlay-mobile").fadeIn(1000);
+            $(".menu-item").on("click", function() {
+                if (menuOpen) {
+                    openMenuMobile();
+                }
+            })
             menuOpen = true;
         } else {
             $(".menu-overlay-mobile").fadeOut(1000);
@@ -68,4 +73,5 @@ function menu() {
 
     $("a#menu-icon-trigger,#float-menu").on("click", openMenu);
     $("#float-menu-mobile").on("click", openMenuMobile);
+
 }
