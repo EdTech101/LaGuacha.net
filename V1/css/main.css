@@ -112,6 +112,13 @@ html {
     padding-right: 3%;
 }
 
+#float-menu-mobile,
+.floating-menu,
+.floating-menu-icon {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .footLanding {
     position: absolute;
     background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
@@ -337,7 +344,8 @@ html {
 .objetives-container {
     height: 100%;
     background-image: url('../images/imagen.jpg');
-    /* background-position-y: 200px; */
+    background-position-x: -1px;
+    background-size: 101% auto;
 }
 
 .tittle-middle {
@@ -1100,7 +1108,7 @@ div.row.justify-content-start>ul>li,
 @media(min-width:1024px) and (min-height:580px) {
     .main-container>div.carousel-height {
         padding: 40% 0px;
-        background-size: 100% auto;
+        background-size: auto 100%;
     }
 }
 
