@@ -787,6 +787,7 @@ div.row.justify-content-start>ul>li,
     padding: 29% 0px;
     background-size: 100% auto;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .img-1 {
@@ -1107,8 +1108,8 @@ div.row.justify-content-start>ul>li,
 
 @media(min-width:1024px) and (min-height:580px) {
     .main-container>div.carousel-height {
-        padding: 40% 0px;
-        background-size: auto 100%;
+        padding: 35% 0px;
+        background-size: 100% auto;
     }
 }
 
@@ -1141,7 +1142,7 @@ div.row.justify-content-start>ul>li,
         font-size: .6em;
     }
     .form {
-        height: 143%;
+        height: 119%;
     }
     .imageMiddle {
         background-size: auto 100%;
@@ -1188,7 +1189,7 @@ div.row.justify-content-start>ul>li,
         font-size: .4em;
     }
     .theFarm {
-        height: 140%;
+        height: 125%;
     }
     .divider {
         font-size: 2em;
@@ -1248,9 +1249,6 @@ div.row.justify-content-start>ul>li,
     }
     .objectives-foot {
         bottom: -75px;
-    }
-    .theFarm {
-        padding-top: 70px;
     }
     .theFarm {
         padding-top: 30px;
@@ -1361,6 +1359,9 @@ div.row.justify-content-start>ul>li,
     }
     .form-container {
         padding: 95px 0px 0px 0px;
+    }
+    .mision {
+        padding-top: 20%;
     }
 }
 
@@ -1516,5 +1517,37 @@ div.row.justify-content-start>ul>li,
     }
     .theFarm {
         height: 60%;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) and (max-height: 600px) {
+    .main-container>div.carousel-height {
+        background-size: 100% auto;
+    }
+}
+
+@media (min-width: 799px) and (max-width: 801px) and (max-height: 1280px) {
+    .main-container>div.carousel-height {
+        padding: 81% 0px;
+    }
+    .Main-Logo {
+        width: 70%;
+        margin: calc(400%/6) auto 0px 0px;
+    }
+    .objectives-foot {
+        bottom: -6px;
+    }
+}
+
+@media (min-width: 1279px) and (max-width: 1281px) and (max-height: 801px) {
+    .main-container>div.carousel-height {
+        padding: 38% 0px;
+        background-size: 100% auto;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 481px) and (max-height: 320px) {
+    .theFarm {
+        height: 145%;
     }
 }
