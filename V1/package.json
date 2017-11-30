@@ -15,8 +15,10 @@
     "bootstrap-datepicker": "^1.7.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "pgwslideshow": "^2.0.0",
     "popper.js": "^1.12.5",
     "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tether": "^1.4.3"
   }
 }

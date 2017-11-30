@@ -1,4 +1,5 @@
 function menu() {
+    $("#float-menu-mobile,#float-menu").draggable();
     //Menu related functions
     var menuOpen = false;
     var menu = $(".menu-overlay,.menu-bar");

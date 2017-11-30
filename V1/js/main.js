@@ -4,4 +4,6 @@ $(document).ready(function() {
     carousel();
     smoothScroll();
     slickInit();
+    gallery();
+    datePicker();
 });

@@ -269,7 +269,7 @@ html {
 .content {
     font-family: Calibri;
     word-break: keep-all;
-    font-size: large;
+    font-size: .3em;
 }
 
 .circle-Button {
@@ -374,10 +374,10 @@ html {
     z-index: 1;
     background-position: 100% 100%;
     background-size: 100%;
+    margin: 0px -15px;
 }
 
 .worm {
-    width: 50%;
     margin-left: -100px;
     margin-top: 110px;
 }
@@ -554,13 +554,21 @@ html {
     margin: 0px 10% 0px 10%;
 }
 
-.icon-bar>div>* {
+.icon-bar>div>i,
+.icon-bar>div>a>i {
     padding: 10px 10px 10px 10px;
     background-color: #339040;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    margin: 10px 10px 30px 10px;
+}
+
+.icon-bar {
+    margin-bottom: 20px;
+}
+
+.icon-bar>div {
+    margin-right: 15px;
 }
 
 textarea {
@@ -806,7 +814,67 @@ div.row.justify-content-start>ul>li,
     background-image: url('../images/carousel/1.jpg');
 }
 
-@media (max-width:600px) {
+.objective {
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.carousel-objectives {
+    margin-top: 20px;
+}
+
+.arrow-target {
+    margin-top: 20px;
+}
+
+.reservations-container {
+    height: 90%;
+}
+
+.objective-img {
+    max-height: 60px;
+    min-height: 60px;
+}
+
+.reserve-form {
+    margin: 100px 0px;
+}
+
+.brown-background {
+    background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/cuadro datos de la reservacion.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brown-background>h1 {
+    padding: 40px 0px;
+    color: white;
+}
+
+.slogan {
+    font-family: annieUse;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.form-reserve,
+.no-background {
+    background-color: transparent !important;
+    border: none !important;
+    color: grey;
+}
+
+.green-line::after {
+    content: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/linea separadora vertical.svg');
+}
+
+.brown {
+    color: #9F684F;
+}
+
+@media (max-width: 600px) {
     .tittle {
         margin-top: -21px;
     }
@@ -894,7 +962,7 @@ div.row.justify-content-start>ul>li,
         padding-top: 320px;
     }
     .content {
-        font-size: .5em;
+        font-size: .4em;
     }
     .Tittle {
         font-size: 1em;
@@ -1007,7 +1075,8 @@ div.row.justify-content-start>ul>li,
     }
     .guacha,
     .worm,
-    .fa-map-marker {
+    .fa-map-marker,
+    .worm-col {
         display: none !important;
     }
     .Tittle {
@@ -1019,7 +1088,7 @@ div.row.justify-content-start>ul>li,
         margin-bottom: 0px;
     }
     .content {
-        font-size: .5em;
+        font-size: .4em;
         margin-top: 0px;
         text-align: justify;
     }
@@ -1186,11 +1255,11 @@ div.row.justify-content-start>ul>li,
         background-size: auto 100%;
     }
     .content {
-        font-size: .4em;
+        font-size: .3em;
     }
-    .theFarm {
-        height: 125%;
-    }
+    /*  .theFarm {
+    height: 125%;
+} */
     .divider {
         font-size: 2em;
         letter-spacing: 4px;
@@ -1228,6 +1297,7 @@ div.row.justify-content-start>ul>li,
     }
     .icon-bar {
         margin-left: -55px !important;
+        width: 133%;
     }
     .form-top {
         top: -130px;
@@ -1298,7 +1368,8 @@ div.row.justify-content-start>ul>li,
 @media (max-width:992px) {
     .guacha,
     .worm,
-    .fa-map-marker {
+    .fa-map-marker,
+    .worm-col {
         display: none !important;
     }
 }
@@ -1550,4 +1621,57 @@ div.row.justify-content-start>ul>li,
     .theFarm {
         height: 145%;
     }
+}
+
+@media (max-height: 550px) {
+    .theFarm {
+        height: 120%;
+    }
+    .objectives-top {
+        margin-left: -1.1px;
+        width: 100.4687555%;
+    }
+    .back1,
+    .back2,
+    .back3 {
+        margin-left: -1.1px;
+        width: 100.2%;
+    }
+}
+
+@media (max-height: 300px) {
+    .theFarm {
+        height: 150%;
+    }
+}
+
+@media (min-height: 600px) {
+    li>img {
+        max-height: 600px !important;
+        min-height: 600px !important;
+    }
+    li>a>img {
+        max-height: 600px !important;
+        min-height: 600px !important;
+    }
+}
+
+.ps-current>ul {
+    padding-left: 20px;
+}
+
+.ps-current>ul>li {
+    margin-top: 0px;
+}
+
+ul#GalleryCarousell>li {
+    margin-top: 0px !important;
+}
+
+.modal-dialog {
+    max-width: 100% !important;
+}
+
+.close {
+    color: white !important;
 }
