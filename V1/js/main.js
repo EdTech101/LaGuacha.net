@@ -6,4 +6,7 @@ $(document).ready(function() {
     slickInit();
     gallery();
     datePicker();
+    formController();
+    tooltips();
+    request();
 });

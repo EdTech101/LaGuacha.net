@@ -15,10 +15,17 @@ function carousel() {
         autoplay: true,
         infinite: true,
         responsive: [{
-            breakpoint: 700,
-            settings: {
-                slidesToShow: 1
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        }]
+        ]
     });
 }

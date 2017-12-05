@@ -72,7 +72,7 @@ function menu() {
         $(".close-button,.menu-bar>li>a").on("click", closeMenu);
     };
 
-    $("a#menu-icon-trigger,#float-menu").on("click", openMenu);
+    $("#menu-icon-trigger,#float-menu").on("click", openMenu);
     $("#float-menu-mobile").on("click", openMenuMobile);
 
 }

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-<title>Granja Ecoturistica la guacha V-1.0</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
-<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
-<link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
-<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
-<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
-<link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.css" />
+
+<head>
+    <title>Granja Ecoturistica la guacha V-1.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" />
+</head>
 
 <body>
     <div data-aos="fade-down" id="float-menu" data-aos-anchor="#trigger-right" class="floating-menu text-center hidden-lg-down">
@@ -26,7 +30,7 @@
     <div class="main-container">
         <div class="topLanding">
             <span class="pull-right logo"></span>
-            <a href="#" id="menu-icon-trigger"><span class="menu pull-left"></span></a>
+            <a href="#" id="menu-icon-trigger"><span class="menu pull-left link"></span></a>
         </div>
         <div class="overlay text-center" id="overlay-carousel">
             <img class="Main-Logo img-fluid" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
@@ -300,36 +304,117 @@
                 <img class="worm img-fluid" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen-gusano-25.png" alt="gusano">
             </div>
             <div class="col">
-                <form class="reserve-form row">
-                    <div class="col-12">
-                        <div class="row justify-content-around">
-                            <div class="col text-center brown-background">
-                                <h1>Datos de la Reservación</h1>
+                <form id="reservations-form" class="reserve-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row justify-content-around">
+                                <div class="col text-center brown-background">
+                                    <h1>Datos de la Reservación</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="form-group row justify-content-around">
-                            <div class="input-group input-daterange">
-                                <label class="sr-only" for="dateInit">dateInit</label>
-                                <div class="input-group">
-                                    <input type="text" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateInit" placeholder="Fecha Inicio">
-                                    <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="green-line col-1"></div>
-                                <div class="input-group">
-                                    <label class="sr-only" for="dateEnd">dateEnd</label>
-                                    <input type="text" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateEnd" placeholder="Fecha Fin">
-                                    <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="green-bottom">
+                                <div class="row">
+                                    <div class="padding-fix col">
+                                        <div class="input-group">
+                                            <label class="sr-only" for="dateInit">dateInit</label>
+                                            <input required type="text" name="dateInit" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateInit" placeholder="Fecha Inicio">
+                                            <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="padding-fix green-left col">
+                                        <div class="input-group">
+                                            <label required class="sr-only" for="dateEnd">dateEnd</label>
+                                            <input type="text" name="dateEnd" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateEnd" placeholder="Fecha Fin">
+                                            <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row align-items-center">
-
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row align-items-end">
+                                <div class="col-6 col-sm-6 green-right custom-margin">
+                                    <div class="green-bottom padding-fix">
+                                        <div class="row align-items-end">
+                                            <label for="guest" class="col col-form-label guest-label">Número de Personas</label>
+                                            <div class="input-group col">
+                                                <span class="input-group-btn">
+                                                <button class="btn btn-guest btn-" type="button">-</button>
+                                            </span>
+                                                <input type="text" name="guests" disabled class="form-control input-guest text-center" placeholder="1" value="1">
+                                                <span class="input-group-btn">
+                                                <button class="btn btn-guest btnPlus" type="button">+</button>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="input-group green-bottom padding-fix">
+                                        <select class="custom-select" required name="reserveType">
+                                            <option selected>Tipo de Reserva</option>
+                                            <option value=1>Caney</option>
+                                            <option value=2>Piscina</option>
+                                            <option value=3>Parque</option>
+                                            <option value=4>Cabañas</option>
+                                            <option value=5>Otros</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group row align-items-top">
-
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <div class="green-bottom height-input">
+                                    <input type="tel" required name="cellphone" class="form-control no-background input-middle padding-left-fix" placeholder="Numero Telefonico">
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <div class="green-bottom height-input">
+                                    <input type="text" maxlength="50" required name="mail" class="form-control no-background input-middle padding-left-fix" placeholder="E-mail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <div class="green-bottom height-input">
+                                    <input type="text" maxlength="50" required name="name" class="form-control no-background input-middle padding-left-fix" placeholder="Nombre Completo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <div class="green-bottom height-input">
+                                    <label class="sr-only" for="information">textarea</label>
+                                    <textarea name="information" id="information" class="form-control no-background" placeholder="Coloque aqui información adicional referente a su reservación..." rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="reservation-submit">
+                                <button type="submit" class="no-background float-right reservation-submit submitButon">Reservar Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errors">
                     </div>
                 </form>
             </div>
@@ -374,20 +459,20 @@
             <div class="form-container">
                 <div class="container-fluid">
                     <div class="icon-bar row">
-                        <div class="col-lg-1 col-md col-2">
-                            <i class="fa fa-phone fa-3x text-center fa-inverse" aria-hidden="true"></i>
+                        <div data-toggle="tooltip" title="+58 4147937084" data-toggle="tooltip" id="cellphone" data-placement="top" class="col-lg-1 col-md col-2">
+                            <a href="tel:+58 4147937084"><i class="fa fa-phone fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
                         </div>
-                        <div class="col-lg-1 col-md col-2">
-                            <a href="https://www.facebook.com/laguacha.granjaecoturistica/"><i class="fa fa-facebook fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
+                        <div data-toggle="tooltip" title="laguacha.granjaecoturistica" data-placement="top" class="col-lg-1 col-md col-2">
+                            <a target="_blank" class="link" href="https://www.facebook.com/laguacha.granjaecoturistica/"><i class="fa fa-facebook fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
                         </div>
-                        <div class="col-lg-1 col-md col-2">
-                            <a href="https://twitter.com/laguachaeco"><i class="fa fa-twitter fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
+                        <div data-toggle="tooltip" title="laguachaeco" data-placement="top" class="col-lg-1 col-md col-2">
+                            <a target="_blank" href="https://twitter.com/laguachaeco"><i class="fa fa-twitter fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
                         </div>
-                        <div class="col-lg-1 col-md col-2">
-                            <a href="https://www.instagram.com/laguacha.granjaecoturistica/"><i class="fa fa-instagram fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
+                        <div data-toggle="tooltip" title="laguacha.granjaecoturistica" data-placement="top" class="col-lg-1 col-md col-2">
+                            <a target="_blank" href="https://www.instagram.com/laguacha.granjaecoturistica/"><i class="fa fa-instagram fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
                         </div>
-                        <div class="col-lg-1 col-md hidden-sm-down">
-                            <i class="fa fa-map-marker fa-3x text-center fa-inverse" aria-hidden="true"></i>
+                        <div data-toggle="tooltip" title="96, Avenida Principal El Muco, Carúpano, Sucre, Venezuela" data-placement="top" class="col-lg-1 col-md hidden-sm-down">
+                            <a target="_blank" href="https://www.google.dm/maps/place/La+Guacha/@10.6181842,-63.2763715,193m/data=!3m1!1e3!4m5!3m4!1s0x8c33c36d625b11ef:0x2246fb84b0d76739!8m2!3d10.6192007!4d-63.2759171"><i class="fa fa-map-marker fa-3x text-center fa-inverse" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -411,6 +496,13 @@
                                         <textarea class="form-control" id="exampleTextarea" placeholder="coloque aqui informacion referente a su consulta..." rows="6"></textarea>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="reservation-submit contact-submit">
+                                            <button type="submit" class="no-background float-left reservation-submit submitButon contact-submit-button">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -432,17 +524,19 @@
                         </div>
                         <div class="row justify-content-start">
                             <ul class="col-md-4 col-12">
-                                <li><a href="#theFarm">Misión</a></li>
-                                <li><a href="#theFarm">Visión</a></li>
-                                <li><a href="#objectives">Objetivos Específicos</a></li>
-                                <li><a href="#theFarm">Principios</a></li>
+                                <li><a class="link" href="#theFarm">Misión</a></li>
+                                <li><a class="link" href="#theFarm">Visión</a></li>
+                                <li><a class="link" href="#objectives">Objetivos Específicos</a></li>
+                                <li><a class="link" href="#theFarm">Principios</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <h1>Reservaciones</h1>
+                                <a class="link" href="#reservations">
+                                    <h1 class="footer-title">Reservaciones</h1>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -455,7 +549,7 @@
                         <div class="row justify-content-start">
                             <ul class="col">
                                 <li>
-                                    Eventos Próximos
+                                    <a class="link" href="#events">Eventos Próximos</a>
                                 </li>
                             </ul>
                         </div>
@@ -468,8 +562,8 @@
                         </div>
                         <div class="row justify-content-start">
                             <ul class="col">
-                                <li>Teléfono</li>
-                                <li>Dirección</li>
+                                <li data-toggle="tooltip" title="+58 4147937084" id="cellphone-link" data-placement="left"><a class="link" href="tel:+58 4147937084">Teléfono</a></li>
+                                <li data-toggle="tooltip" title="96, Avenida Principal El Muco, Carúpano, Sucre, Venezuela" data-placement="left"><a target="_blank" class="link" href="https://www.google.dm/maps/place/La+Guacha/@10.6181842,-63.2763715,193m/data=!3m1!1e3!4m5!3m4!1s0x8c33c36d625b11ef:0x2246fb84b0d76739!8m2!3d10.6192007!4d-63.2759171">Dirección</a></li>
                             </ul>
                         </div>
                         <div class="row justify-content-start">
@@ -479,7 +573,7 @@
                             <div class="col col-12">
                                 <div class="footer-icons row justify-content-start">
                                     <div class="col-lg-2 col-md-3 col-2">
-                                        <a href="https://twitter.com/laguachaeco">
+                                        <a target="_blank" class="link" href="https://twitter.com/laguachaeco">
                                             <span class="fa-stack fa-lg">
                                                 <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
                                                 <i class="fa fa-twitter fa-1x text-center fa-stack-1x" aria-hidden="true"></i>                    
@@ -487,7 +581,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-2 col-md-3 col-2">
-                                        <a href="https://www.facebook.com/laguacha.granjaecoturistica/">
+                                        <a target="_blank" class="link" href="https://www.facebook.com/laguacha.granjaecoturistica/">
                                             <span class="fa-stack fa-lg">
                                                     <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
                                                     <i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true"></i>            
@@ -495,7 +589,7 @@
                                         </a>
                                     </div>
                                     <div class="col-lg-2 col-md-3 col-2">
-                                        <a href="https://www.instagram.com/laguacha.granjaecoturistica/">
+                                        <a target="_blank" class="link" href="https://www.instagram.com/laguacha.granjaecoturistica/">
                                             <span class="fa-stack fa-lg">
                                                 <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
                                                 <i class="fa fa-instagram fa-1x text-center fa-stack-1x" aria-hidden="true"></i> 
@@ -515,17 +609,17 @@
                             <div class="col-lg-2 col-md-3 col-4">
                                 <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
-                                        <a href="https://twitter.com/laguachaeco"><i class="fa fa-twitter fa-1x text-center fa-stack-1x" aria-hidden="true"></i></a>         
+                                        <a target="_blank" class="link" href="https://twitter.com/laguachaeco"><i class="fa fa-twitter fa-1x text-center fa-stack-1x" aria-hidden="true"></i></a>         
                                     </span>
                             </div>
                             <div class="col-lg-2 col-md-3 col-4">
                                 <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
-                                        <a href="https://www.facebook.com/laguacha.granjaecoturistica/"><i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true"></i></a>                                                        
+                                        <a target="_blank" class="link" href="https://www.facebook.com/laguacha.granjaecoturistica/"><i class="fa fa-facebook fa-1x text-center fa-stack-1x" aria-hidden="true"></i></a>                                                        
                                     </span>
                             </div>
                             <div class="col-lg-2 col-md-3 col-4">
-                                <a href="https://www.instagram.com/laguacha.granjaecoturistica/">
+                                <a target="_blank" class="link" href="https://www.instagram.com/laguacha.granjaecoturistica/">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x circle-footer"></i>                          
                                         <i class="fa fa-instagram fa-1x text-center fa-stack-1x" aria-hidden="true"></i>
@@ -548,19 +642,19 @@
                 <div class="col-lg-5 col-md-6 col-6" id="col-buttons">
                     <ul class="menu-bar no-show">
                         <li>
-                            <a href="#theFarm" class="close-action"><span class="menu-icon the-farm-icon"></span>La Granja</a>
+                            <a href="#theFarm" class="close-action link"><span class="menu-icon the-farm-icon"></span>La Granja</a>
                         </li>
                         <li>
-                            <a href="#reservations" class="close-action"><span class="menu-icon reservations-icon"></span>Reservaciones</a>
+                            <a href="#reservations" class="close-action link"><span class="menu-icon reservations-icon"></span>Reservaciones</a>
                         </li>
                         <li>
-                            <a href="#events" class="close-action"><span class="menu-icon events-icon"></span>Eventos</a>
+                            <a href="#events" class="close-action link"><span class="menu-icon events-icon"></span>Eventos</a>
                         </li>
                         <li>
-                            <a id="galeryId" data-toggle="modal" data-target="#ModalGallery" href="#" class="close-action"><span class="menu-icon gallery-icon"></span>Galería</a>
+                            <a id="galeryId" data-toggle="modal" data-target="#ModalGallery" href="#" class="close-action link"><span class="menu-icon gallery-icon"></span>Galería</a>
                         </li>
                         <li>
-                            <a href="#contact-us" class="close-action"><span class="menu-icon contact-icon"></span>Contacto</a>
+                            <a href="#contact-us" class="close-action link"><span class="menu-icon contact-icon"></span>Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -570,11 +664,11 @@
     <div class="overlay menu-overlay-mobile text-center">
         <div class="container-fluid menu-height">
             <div class="row align-items-top">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#theFarm" class="close-action">La Granja<span class="menu-icon the-farm-icon"></span></a></div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#reservations" class="close-action">Reservaciones<span class="menu-icon reservations-icon"></span></a></div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#events" class="close-action">Eventos<span class="menu-icon events-icon"></span></a></div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#" data-toggle="modal" data-target="#ModalGallery" class="close-action">Galería<span class="menu-icon gallery-icon"></span></a></div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#contact-us" class="close-action">Contacto<span class="menu-icon contact-icon"></span></a></div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#theFarm" class="close-action link">La Granja<span class="menu-icon the-farm-icon"></span></a></div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#reservations" class="close-action link">Reservaciones<span class="menu-icon reservations-icon"></span></a></div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#events" class="close-action link">Eventos<span class="menu-icon events-icon"></span></a></div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#" data-toggle="modal" data-target="#ModalGallery" class="close-action link">Galería<span class="menu-icon gallery-icon"></span></a></div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 menu-item"><a href="#contact-us" class="close-action link">Contacto<span class="menu-icon contact-icon"></span></a></div>
             </div>
         </div>
     </div>
@@ -598,7 +692,7 @@
                         <li><img src="images/carousel/2.jpg" alt="Flor" data-description="Flor en hacienda la guacha"></li>
                         <li><img src="images/carousel/3.jpg" alt="Guacharaca oriunda de Sucre" data-description="Ave bebe que fue encontrada y rescada"></li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="#">
                                 <img src="images/carousel/3.jpg" alt="Guacharaca oriunda de Sucre" data-description="Ave bebe que fue encontrada y rescada">
                             </a>
                         </li>
@@ -614,8 +708,8 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/pgwslideshow/pgwslideshow.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="node_modules/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
     <script>
         AOS.init();
     </script>
@@ -624,10 +718,13 @@
     <script src="js/smoothScrolling.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/datePickers.js"></script>
     <script src="js/player.js"></script>
     <script src="js/slickInit.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/datePickers.js"></script>
+    <script src="js/formController.js"></script>
+    <script src="js/tooltips.js"></script>
+    <script src="js/requests.js"></script>
     <script src="js/main.js"></script>
 </body>
 
