@@ -789,7 +789,7 @@ div.row.justify-content-start>ul>li,
     position: fixed;
     height: 60px;
     width: 60px;
-    background-color: rgba(74, 55, 50, 0.7);
+    background-color: rgba(74, 55, 50, 0.5);
     top: 5px;
     right: 27px;
     border-radius: 50%;
@@ -964,6 +964,78 @@ div.row.justify-content-start>ul>li,
     width: 250px;
 }
 
+.error-input::after {
+    content: "*";
+    position: absolute;
+    color: red;
+    right: 0px;
+    top: 0px;
+    font-weight: 900;
+}
+
+.error-input-large::after {
+    right: 25px;
+    top: 20px;
+}
+
+.error-message {
+    font-size: 0.6em;
+}
+
+.error {
+    color: red;
+}
+
+.error-list {
+    margin-top: 10px;
+}
+
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #9F684F;
+}
+
+.datetimepicker table tr td.active:hover,
+.datetimepicker table tr td.active:hover:hover,
+.datetimepicker table tr td.active.disabled:hover,
+.datetimepicker table tr td.active.disabled:hover:hover,
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active,
+.datetimepicker table tr td.active.disabled,
+.datetimepicker table tr td.active:hover.disabled,
+.datetimepicker table tr td.active.disabled.disabled,
+.datetimepicker table tr td.active.disabled:hover.disabled,
+.datetimepicker table tr td.active[disabled],
+.datetimepicker table tr td.active:hover[disabled],
+.datetimepicker table tr td.active.disabled[disabled],
+.datetimepicker table tr td.active.disabled:hover[disabled],
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.disabled:hover.active,
+.datetimepicker table tr td span.active,
+.datetimepicker table tr td span.active:hover,
+.datetimepicker table tr td span.active.disabled,
+.datetimepicker table tr td span.active.disabled:hover {
+    background-image: linear-gradient(to bottom, #9F684F, #9F684F);
+}
+
 @media(max-height:900px) and (min-width:1000px) {
     .topLanding {
         background-position: 100% 100%;
@@ -1040,6 +1112,12 @@ div.row.justify-content-start>ul>li,
 @media (max-width:700px) {
     .tittle {
         font-size: 2em;
+    }
+}
+
+@media (max-width:1600px) and (min-width:1000px) and (min-height: 500px) and (max-height: 700px) {
+    .flowers-footer {
+        bottom: -80px;
     }
 }
 

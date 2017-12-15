@@ -1,89 +1,123 @@
-<?php
-include 'send.php';
-include 'db.php';
+<?php 
+include 'controllers/reservationsController.php';
+include 'controllers/verificationsController.php';
+include 'controllers/contactsController.php';
+include 'helpers/send.php';
+include 'api_db/inserts.php';
+include 'api_db/tableCleaner.php';
+include 'helpers/validators.php';
+include 'helpers/guid.php';
+include 'helpers/messageContent.php'; 
+include 'apiGlobal.php'; 
 
-$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+$request = explode('/', trim(empty ($_SERVER['PATH_INFO'])?" ":$_SERVER['PATH_INFO'],'/'));
 /* $input = json_decode(file_get_contents('php://input')); */
 $method = $_SERVER['REQUEST_METHOD'];
 
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-
-function  dateValidator($datedata)
+if(deleteOldRecords())
 {
-    $date = date_parse($datedata);
-    if (checkdate($date["month"], $date["day"], $date["year"]))
-        return true;
-    else
-    return false;
+    ob_start();                              
+    while (ob_get_status()) 
+    {
+        ob_end_clean();
+    }   
+    exit();
 }
-
-function emailValidator($mail)
+else
 {
-    if (filter_var($mail, FILTER_VALIDATE_EMAIL)) 
+switch ($method) {    
+    case 'POST': 
+    switch ($request[0]) 
     {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
-function validateData($rawdata)
-{
-    $errors = 0;   
-    empty($rawdata["name"])? $errors++ : null;
-    empty($rawdata["reserveType"])? $errors++ : null;
-    empty($rawdata["cellphone"])? $errors++ : null;
-    empty($rawdata["guests"])? $errors++ : null;
-    empty($rawdata['dateInit'])? $errors++ : null;
-    empty($rawdata['dateEnd'])? $errors++ : null;
-    empty($rawdata['mail'])? $errors++ : null;     
-    dateValidator($rawdata['dateInit']) ? null : $errors++;
-    dateValidator($rawdata['dateEnd']) ? null :  $errors++;
-    emailValidator ($rawdata['mail'])? null :  $errors++;
-    if($errors == 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-};
-switch ($method) {
-    case 'POST':     
-    $receivedData = $_POST['data']; 
-    
-    foreach ( $receivedData as $value) {      
-        $value = test_input($value);
-     }  
-
-    if(validateData($receivedData))  
-    {             
-        $success = sendMessage($receivedData);        
-        if (!$success) 
+        case 'reservation':    
+        $data = $_POST['data'];     
+        $response = reservations($data);    
+        if($response)
         {
-            return false;
+            header('Content-Type: application/json');   
+            echo json_encode("true");
+            exit();
         }
         else
         {
-           $id = saveData($receivedData['mail']);
-           
-            return true;
-        }       
-    }  
-    break; 
-    case 'GET':  
-    http_response_code(404);  
-    return '';
-        break;
+            ob_start();                              
+            while (ob_get_status()) 
+            {
+                ob_end_clean();
+            } 
+            http_response_code(400);
+        }
+
+        exit();
+        break; 
+        case 'contact': 
+        $response = contacts($_POST['data']);
+            if($response)
+            {
+                http_response_code(200);
+                echo json_encode($response);  
+            }
+            else
+            {
+                http_response_code(400);
+                header('Content-Type: application/json');
+                echo json_encode($response);  
+            } 
+        exit();
+        break; 
+        default:
+            http_response_code(404); 
+        break;      
+    }   
+    break;  
+    case 'GET': 
+        if(!$request == "")
+        {
+            switch ($request[0]) 
+            {
+                case 'confirmations':   
+                    if(empty($request[1]))
+                    {                      
+                        http_response_code(400); 
+                        exit();
+                    }
+                    else
+                    {                       
+                        $result = verifications($request[1]);
+                        header('Content-Type: application/json');                         
+                        if($result)
+                        {
+                            ob_start();                              
+                            while (ob_get_status()) 
+                            {
+                                ob_end_clean();
+                            } 
+                            $location = $GLOBALS['development']?'V1/':'';
+                            header('Location:/'.$location.'?success=""');
+                        }
+                        else
+                        {   
+                            ob_start();                              
+                            while (ob_get_status()) 
+                            {
+                                ob_end_clean();
+                            }     
+                            http_response_code(400); 
+                            $location = $GLOBALS['development']?'V1/':'';
+                            header('Location:/'.$location.'?error=""'); 
+                        }
+                    }
+                break;                
+                default:
+                    http_response_code(404); 
+                break;
+            }            
+        } 
+    break;
     default:
-        break;
+        http_response_code(404);  
+    break;
 }
+}
+
  ?>

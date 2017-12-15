@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css" />
 </head>
 
 <body>
@@ -304,7 +305,7 @@
                 <img class="worm img-fluid" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen-gusano-25.png" alt="gusano">
             </div>
             <div class="col">
-                <form id="reservations-form" class="reserve-form">
+                <form id="reservations-form" class="reserve-form" novalidate>
                     <div class="row">
                         <div class="col-12">
                             <div class="row justify-content-around">
@@ -319,14 +320,14 @@
                             <div class="green-bottom">
                                 <div class="row">
                                     <div class="padding-fix col">
-                                        <div class="input-group">
+                                        <div class="input-group" id="error-Date-Init">
                                             <label class="sr-only" for="dateInit">dateInit</label>
                                             <input required type="text" name="dateInit" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateInit" placeholder="Fecha Inicio">
                                             <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
                                         </div>
                                     </div>
                                     <div class="padding-fix green-left col">
-                                        <div class="input-group">
+                                        <div class="input-group" id="error-Date-End">
                                             <label required class="sr-only" for="dateEnd">dateEnd</label>
                                             <input type="text" name="dateEnd" class="col form-reserve mb-2 mr-sm-2 mb-sm-0" id="dateEnd" placeholder="Fecha Fin">
                                             <div class="input-group-addon no-background"><i class="fa fa-calendar brown" aria-hidden="true"></i></div>
@@ -340,14 +341,14 @@
                         <div class="col-12">
                             <div class="row align-items-end">
                                 <div class="col-6 col-sm-6 green-right custom-margin">
-                                    <div class="green-bottom padding-fix">
+                                    <div class="green-bottom padding-fix" id="error-input-guests">
                                         <div class="row align-items-end">
                                             <label for="guest" class="col col-form-label guest-label">Número de Personas</label>
                                             <div class="input-group col">
                                                 <span class="input-group-btn">
                                                 <button class="btn btn-guest btn-" type="button">-</button>
                                             </span>
-                                                <input type="text" name="guests" disabled class="form-control input-guest text-center" placeholder="1" value="1">
+                                                <input type="number" name="guests" class="form-control input-guest text-center" placeholder="1" value="1">
                                                 <span class="input-group-btn">
                                                 <button class="btn btn-guest btnPlus" type="button">+</button>
                                             </span>
@@ -356,14 +357,20 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="input-group green-bottom padding-fix">
+                                    <div class="input-group green-bottom padding-fix" id="error-input-reserveType">
                                         <select class="custom-select" required name="reserveType">
                                             <option selected>Tipo de Reserva</option>
                                             <option value=1>Caney</option>
                                             <option value=2>Piscina</option>
                                             <option value=3>Parque</option>
                                             <option value=4>Cabañas</option>
-                                            <option value=5>Otros</option>
+                                            <option value=5>Explanada</option>
+                                            <option value=6>Gradas</option>
+                                            <option value=7>Camerino</option>
+                                            <option value=8>Cantina</option> 
+                                            <option value=9>Bar</option>        
+                                            <option value=10>Equipos</option>                                                   
+                                            <option value=11>Otros</option>
                                         </select>
                                     </div>
                                 </div>
@@ -374,7 +381,9 @@
                         <div class="col-12">
                             <div>
                                 <div class="green-bottom height-input">
-                                    <input type="tel" required name="cellphone" class="form-control no-background input-middle padding-left-fix" placeholder="Numero Telefonico">
+                                    <div id="error-input-cellphone" class="error-input-large">
+                                        <input type="tel" id="numberInput" required name="cellphone" class="form-control no-background input-middle padding-left-fix" placeholder="Numero Telefonico">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -383,14 +392,16 @@
                         <div class="col-12">
                             <div>
                                 <div class="green-bottom height-input">
-                                    <input type="text" maxlength="50" required name="mail" class="form-control no-background input-middle padding-left-fix" placeholder="E-mail">
+                                    <div id="error-input-mail" class="error-input-large">
+                                        <input type="mail" maxlength="50" required name="mail" class="form-control no-background input-middle padding-left-fix" placeholder="E-mail">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div>
+                            <div id="error-input-name" class="error-input-large">
                                 <div class="green-bottom height-input">
                                     <input type="text" maxlength="50" required name="name" class="form-control no-background input-middle padding-left-fix" placeholder="Nombre Completo">
                                 </div>
@@ -399,11 +410,20 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div>
+                            <div id="error-input-information" class="error-input-large">
                                 <div class="green-bottom height-input">
                                     <label class="sr-only" for="information">textarea</label>
-                                    <textarea name="information" id="information" class="form-control no-background" placeholder="Coloque aqui información adicional referente a su reservación..." rows="2"></textarea>
+                                    <div>
+                                        <textarea name="information" id="information" class="form-control no-background" placeholder="Coloque aqui información adicional referente a su reservación..." rows="2"></textarea>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">                  
+                        <div class="col-12">
+                            <div id="error-list" class="row">
+                                  
                             </div>
                         </div>
                     </div>
@@ -413,9 +433,7 @@
                                 <button type="submit" class="no-background float-right reservation-submit submitButon">Reservar Ahora</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="errors">
-                    </div>
+                    </div>                    
                 </form>
             </div>
         </div>
@@ -477,23 +495,30 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-7">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" id="contact-form" novalidate>
                                 <div class="form-group row align-items-center">
-                                    <label for="name-input" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">Nombre</label>
-                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12">
-                                        <input class="form-control" type="text" placeholder="Introduzca su nombre" id="name-input">
+                                    <label for="name" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">Nombre</label>
+                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12" id="error-input-name-contact">
+                                        <input class="form-control" name="name" type="text" placeholder="Introduzca su nombre" id="name-input">
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label for="email-input" class="col-5 col-lg-3 col-md-4 col-sm-12 col-form-label">E-Mail</label>
-                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12">
-                                        <input class="form-control" id="email-input" type="email" placeholder="nombre@dominio.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]{2,4}$/">
+                                    <label for="mail" class="col-5 col-lg-3 col-md-4 col-sm-12 col-form-label">E-Mail</label>
+                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12" id="error-input-mail-contact">
+                                        <input class="form-control" name="mail" id="email-input" type="email" placeholder="nombre@dominio.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]{2,4}$/">
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-top">
-                                    <label for="exampleTextarea" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">Mensaje</label>
-                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12">
-                                        <textarea class="form-control" id="exampleTextarea" placeholder="coloque aqui informacion referente a su consulta..." rows="6"></textarea>
+                                    <label for="information" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">Mensaje</label>
+                                    <div class="col-12 col-md-8 col-lg-9 col-sm-12" id="error-input-information-contact">
+                                        <textarea class="form-control" name="information" id="exampleTextarea" placeholder="coloque aqui informacion referente a su consulta..." rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">                  
+                                    <div class="col-12">
+                                        <div id="error-list-contact" class="row">
+                                            
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -710,6 +735,7 @@
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/slick-carousel/slick/slick.js"></script>
     <script src="node_modules/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
     <script>
         AOS.init();
     </script>
@@ -726,6 +752,53 @@
     <script src="js/tooltips.js"></script>
     <script src="js/requests.js"></script>
     <script src="js/main.js"></script>
+    <?php
+    include 'api/apiGlobal.php'; 
+    $location = $GLOBALS['development']?'V1/':'';
+    if (!empty($_GET['error'])) 
+    {        
+        echo "<script type=\"text/javascript\">".
+        "window.history.pushState(\"NO\", \"Title\", \"/".$location."\");".
+        "$(document)
+            .ready(
+                function()
+                {
+                        $.toast({
+                            heading: 'Alerta',
+                            text: 'El enlace de validacion ha expirado o no existe por favor ingrese de nuevo su reserva',
+                            showHideTransition: 'Slide transition',
+                            position: 'bottom-center',
+                            icon: 'warning',
+                            hideAfter: false,
+                            afterHidden: function () {    
+                                window.location.hash =\"#reservations \";
+                            }
+                        });
+                }
+            );".
+        "</script>"; 
+       }
+       else if (!empty($_GET['success'])) 
+       {        
+           echo "<script type=\"text/javascript\">".
+           "window.history.pushState(\"NO\", \"Title\", \"/".$location."\");".
+           "$(document)
+               .ready(
+                   function()
+                   {
+                        $.toast({
+                            heading: 'Exito',
+                            text: 'Gracias por reservar en la Guacha granja ecoturistica, su reservacion ha sido confirmada y esta siendo procesada por nuestro personal, en breves momentos un ejecutivo de ventas se pondra en contacto con usted para la formalización de su reserva',
+                            showHideTransition: 'Slide transition',
+                            position: 'bottom-center',
+                            icon: 'success',
+                            hideAfter: false                             
+                        });
+                   }
+               );".
+           "</script>"; 
+          }
+    ?>
 </body>
 
 </html>
