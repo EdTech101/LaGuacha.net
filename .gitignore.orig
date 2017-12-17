@@ -14,8 +14,8 @@ V1/locales*
 <<<<<<< HEAD
 images/**/*.*
 =======
->>>>>>> parent of 8887fb0... Update .gitignore
-**/*.jpg
-**/*.png
-**/*.svg
-**/*.rtf
+>>>>>>> 8887fb080142fe2b46d63adc028328da811e50e7
+*.jpg
+*.png
+*.svg
+*.rtf

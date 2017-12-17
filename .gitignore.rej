@@ -1,0 +1,14 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -11,7 +11,7 @@
+ V1/js/greensock-js/*
+ V1/locales*
+ *.ai
+-**/*.jpg
+-**/*.png
+-**/*.svg
+-**/*.rtf
+\ No newline at end of file
++*.jpg
++*.png
++*.svg
++*.rtf
