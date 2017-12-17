@@ -11,7 +11,6 @@ V1/MEDIDAS DE LA WEB PAGE LA GUACHA/tipografia/annie_use_your_telescope/KGFonts-
 V1/js/greensock-js/*
 V1/locales*
 *.ai
-images/**/*.*
 *.jpg
 *.png
 *.svg

@@ -12,7 +12,7 @@ V1/js/greensock-js/*
 V1/locales*
 *.ai
 images/**/*.*
-*.jpg
-*.png
-*.svg
-*.rtf
+**/*.jpg
+**/*.png
+**/*.svg
+**/*.rtf

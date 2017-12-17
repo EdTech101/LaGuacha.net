@@ -11,8 +11,11 @@ V1/MEDIDAS DE LA WEB PAGE LA GUACHA/tipografia/annie_use_your_telescope/KGFonts-
 V1/js/greensock-js/*
 V1/locales*
 *.ai
+<<<<<<< HEAD
 images/**/*.*
-*.jpg
-*.png
-*.svg
-*.rtf
+=======
+>>>>>>> parent of 8887fb0... Update .gitignore
+**/*.jpg
+**/*.png
+**/*.svg
+**/*.rtf
