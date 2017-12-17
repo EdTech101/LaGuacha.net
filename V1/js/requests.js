@@ -33,7 +33,7 @@ function request() {
         "mail": "",
         "name": "",
         "information": ""
-    }
+    };
     var errorType = {};
     var selectorMapper = {
         "dateInit": "#error-Date-Init",
@@ -64,29 +64,29 @@ function request() {
                 switch (property) {
                     case "dateInit":
                         var type = typeof model.dateInit;
-                        if (!type == "object" && model.dateInit >= new Date().setMinutes(new Date() + 5)) {
+                        if (type != "object" && model.dateInit >= new Date().setMinutes(new Date() + 5)) {
                             errorType.dateInit = {
                                 "message": "la fecha inicial introducida no puede ser menor a la fecha actual"
-                            }
+                            };
                             errors++;
                         } else if (model.dateInit == "" || model.dateInit == undefined || model.dateInit == model.dateEnd || $("#dateInit").val() == "") {
                             errorType.dateInit = {
                                 "message": "Debe introducir una fecha de inicio"
-                            }
+                            };
                             errors++;
                         }
                         break;
                     case "dateEnd":
-                        var type = typeof model.dateEnd;
+                        var typedateEnd = typeof model.dateEnd;
                         if (model.dateEnd == "" || model.dateEnd == undefined || model.dateInit == model.dateEnd || $("#dateEnd").val() == "") {
                             errorType.dateEnd = {
                                 "message": "Debe introducir una fecha de finalizacion"
-                            }
+                            };
                             errors++;
-                        } else if (!type == "object" || model.dateEnd < model.dateInit) {
+                        } else if (!typedateEnd == "object" || model.dateEnd < model.dateInit) {
                             errorType.dateEnd = {
                                 "message": "La fecha final introducida no puede ser menor a la fecha inicial"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -95,12 +95,12 @@ function request() {
                         if (model.mail == "" || model.mail == undefined) {
                             errorType.mail = {
                                 "message": "Debe introducir un correo"
-                            }
+                            };
                             errors++;
                         } else if (!model.mail.match(re)) {
                             errorType.mail = {
                                 "message": "El correo introducido no es valido"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -109,12 +109,12 @@ function request() {
                         if (!model.cellphone.match(re) && typeof model.cellphone == "undefined" || model.cellphone == null) {
                             errorType.cellphone = {
                                 "message": "El numero telefonico no puede contener caracteres especiales, solo numeros"
-                            }
+                            };
                             errors++;
                         } else if (model.cellphone == "" || model.cellphone == undefined) {
                             errorType.cellphone = {
                                 "message": "Debe introducir un numero telefonico"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -122,7 +122,7 @@ function request() {
                         if (typeof model.reserveType != "number" || isNaN(model.reserveType) || model.reserveType == "" || model.reserveType == undefined) {
                             errorType.reserveType = {
                                 "message": "Debe introducir el tipo de reserva"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -130,12 +130,12 @@ function request() {
                         if (typeof model.name != "string" || model.name == null) {
                             errorType.name = {
                                 "message": "Su nombre solo debe contener caracteres alfabeticos"
-                            }
+                            };
                             errors++;
                         } else if (model.name == "" || model.name == undefined) {
                             errorType.name = {
                                 "message": "Debe introducir su nombre"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -143,14 +143,15 @@ function request() {
                         if (typeof model.guests != "number" || model.guests <= 0) {
                             errorType.guests = {
                                 "message": "El numero de invitados debe ser mayor que cero"
-                            }
+                            };
                             errors++;
                         }
+                        break;
                     case "information":
                         if (typeof model.information != "string") {
                             errorType.information = {
                                 "message": "La información adicional solo pueden ser caracteres alfanumericos ó \",\" ó \".\" "
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -176,12 +177,12 @@ function request() {
                         if (typeof model.name != "string" || model.name == null) {
                             errorType.name = {
                                 "message": "Su nombre solo debe contener caracteres alfabeticos"
-                            }
+                            };
                             errors++;
                         } else if (model.name == "" || model.name == undefined) {
                             errorType.name = {
                                 "message": "Debe introducir su nombre"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -190,12 +191,12 @@ function request() {
                         if (model.mail == "" || model.mail == undefined) {
                             errorType.mail = {
                                 "message": "Debe introducir un correo"
-                            }
+                            };
                             errors++;
                         } else if (!model.mail.match(re)) {
                             errorType.mail = {
                                 "message": "El correo introducido no es valido"
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -203,12 +204,12 @@ function request() {
                         if ($("#exampleTextarea").val() == "") {
                             errorType.information = {
                                 "message": "Debe incluir algun tipo de consulta"
-                            }
+                            };
                             errors++;
                         } else if (typeof model.information != "string") {
                             errorType.information = {
                                 "message": "La información adicional solo pueden ser caracteres alfanumericos ó \",\" ó \".\" "
-                            }
+                            };
                             errors++;
                         }
                         break;
@@ -229,7 +230,7 @@ function request() {
         $(".error-input").removeClass("error-input");
         $("#error-list-contact").empty().removeClass("error-list");
         event.preventDefault();
-        var form = event.currentTarget
+        var form = event.currentTarget;
         var jsonData = contactModel;
         for (var index = 0; index < form.length; index++) {
             var name = form[index].name;
@@ -238,15 +239,15 @@ function request() {
                 switch (name) {
                     case "information":
                         element.value = element.value.replace(/[^a-zA-Z0-9àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s\,\.\@\?\¿\;\:\(\)]/gi, '');
-                        jsonData.information = element.value
+                        jsonData.information = element.value;
                         break;
                     case "name":
                         element.value = element.value.replace(/[^a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s]/gi, '');
-                        jsonData.name = element.value
+                        jsonData.name = element.value;
                         break;
                     case "mail":
                         element.value = element.value.replace(/[^a-zA-Z0-9|\s\@\.]/gi, '');
-                        jsonData.mail = element.value
+                        jsonData.mail = element.value;
                         break;
                     default:
                         break;
@@ -270,7 +271,7 @@ function request() {
                             position: 'bottom-right',
                             showHideTransition: 'fade',
                             hideAfter: false
-                        })
+                        });
                         $("#contact-form").trigger("reset");
                     } else {
                         $.toast({
@@ -391,4 +392,4 @@ function request() {
             }
         }
     });
-}
+};

@@ -4,9 +4,8 @@
 <head>
     <title>Granja Ecoturistica la guacha V-1.0</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
@@ -19,14 +18,20 @@
     <link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" />
     <link rel="stylesheet" href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
     <div data-aos="fade-down" id="float-menu" data-aos-anchor="#trigger-right" class="floating-menu text-center hidden-lg-down">
-        <img class="floating-menu-icon" id="menu-icon-trigger" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
+        <img class="floating-menu-icon" id="menu-icon-trigger" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
     </div>
     <div id="float-menu-mobile" class="floating-menu text-center hidden-lg-up">
-        <img class="floating-menu-icon" id="menu-icon-trigger-mobile" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
+        <img class="floating-menu-icon" id="menu-icon-trigger-mobile" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg" />
     </div>
     <div class="main-container">
         <div class="topLanding">
@@ -34,7 +39,7 @@
             <a href="#" id="menu-icon-trigger"><span class="menu pull-left link"></span></a>
         </div>
         <div class="overlay text-center" id="overlay-carousel">
-            <img class="Main-Logo img-fluid" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
+            <img class="Main-Logo img-fluid" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
             <h2 class="slogan" data-aos="fade-in" data-aos-delay="3000" data-aos-easing="ease-in">Disfruta lo natural...</h2>
         </div>
         <div class="footLanding">
@@ -118,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <img class="guacha" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/imagen-guacharaca-21.png" alt="LaGuacha">
+        <img class="guacha" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/imagen-guacharaca-21.png" alt="LaGuacha">
         <div class="theFarmfoot"></div>
     </div>
     <div class="section objectives text-center container-fluid" id="objectives">
@@ -131,7 +136,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico a.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico a.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -145,7 +150,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico b.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico b.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -158,7 +163,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico c.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico c.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -171,7 +176,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico d.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico d.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -185,7 +190,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico h.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico h.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -198,7 +203,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico f.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico f.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -212,7 +217,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico g.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico g.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -226,7 +231,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico e.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico e.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -240,7 +245,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico i.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico i.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -254,7 +259,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico j.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico j.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -268,7 +273,7 @@
                     <div class="col col-12">
                         <div class="row justify-content-center">
                             <div class="col col-6">
-                                <img class="img-fluid objective-img" src="MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico k.svg" alt="turismo">
+                                <img class="img-fluid objective-img" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/objetivos especificos iconos/objetico especifico k.svg" alt="turismo">
                             </div>
                         </div>
                         <div class="row">
@@ -302,7 +307,7 @@
         <div class="reservations-top"></div>
         <div class="row">
             <div class="col worm-col">
-                <img class="worm img-fluid" src="MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen-gusano-25.png" alt="gusano">
+                <img class="worm img-fluid" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/imagen-gusano-25.png" alt="gusano">
             </div>
             <div class="col">
                 <form id="reservations-form" class="reserve-form" novalidate>
@@ -739,19 +744,9 @@
     <script>
         AOS.init();
     </script>
-    <script src="js/jquery.colors.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/smoothScrolling.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/slickInit.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/datePickers.js"></script>
-    <script src="js/formController.js"></script>
-    <script src="js/tooltips.js"></script>
-    <script src="js/requests.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="js/main.min.js"></script>
+
     <?php
     include 'api/apiGlobal.php'; 
     $location = $GLOBALS['development']?'V1/':'';

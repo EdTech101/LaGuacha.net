@@ -34,7 +34,7 @@ function datePicker() {
         if (selectedEnd != null && !wasCleaned) {
             $('#dateEnd').datetimepicker('setDate', selectedEnd);
         }
-    }
+    };
     $('#dateInit').datetimepicker(optionsInit)
         .on('change', function(ev) {
             wasCleaned = true;
@@ -66,5 +66,5 @@ function datePicker() {
         })
         .on('blur', function() {
             // $("#dateEnd").prop('disabled', false);
-        });;
+        });
 }

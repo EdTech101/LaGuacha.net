@@ -35,7 +35,7 @@ function menu() {
             var scrolled = getScroll()[1];
             $(".menu-bar").addClass("w3-out-right");
             menu.removeClass("show").addClass("off");
-            setTimeout(hidder, 900)
+            setTimeout(hidder, 900);
             $(".menu-bar").toggleClass("w3-animate-right w3-animate-opacity");
             $("a#menu-icon-trigger").fadeIn(1000);
             if (scrolled >= 200) {
@@ -43,7 +43,7 @@ function menu() {
                 $("#float-menu").addClass("aos-animate");
             }
             menuOpen = false;
-        };
+        }
     }
 
     function openMenuMobile() {
@@ -53,7 +53,7 @@ function menu() {
                 if (menuOpen) {
                     openMenuMobile();
                 }
-            })
+            });
             menuOpen = true;
         } else {
             $(".menu-overlay-mobile").fadeOut(1000);
@@ -70,7 +70,7 @@ function menu() {
         $(".menu-bar").toggleClass("w3-animate-right w3-animate-opacity");
         $("a#menu-icon-trigger").fadeOut(1000);
         $(".close-button,.menu-bar>li>a").on("click", closeMenu);
-    };
+    }
 
     $("#menu-icon-trigger,#float-menu").on("click", openMenu);
     $("#float-menu-mobile").on("click", openMenuMobile);

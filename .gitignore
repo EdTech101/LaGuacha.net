@@ -1,6 +1,7 @@
-V1/node_modules/
-**/*/._.DS_Store
-V1/MEDIDAS DE LA WEB PAGE LA GUACHA/**/.DS_Store
+V1/node_modules/*
+**/*.DS_Store
+**/*._*
+**/*.txt
 V1/MEDIDAS DE LA WEB PAGE LA GUACHA/*.ai
 **/**/._carpeta sin título.textClipping
 V1/MEDIDAS DE LA WEB PAGE LA GUACHA/ICONOS MENU/carpeta sin título.textClipping
@@ -10,3 +11,7 @@ V1/MEDIDAS DE LA WEB PAGE LA GUACHA/tipografia/annie_use_your_telescope/KGFonts-
 V1/js/greensock-js/*
 V1/locales*
 *.ai
+**/*.jpg
+**/*.png
+**/*.svg
+**/*.rtf

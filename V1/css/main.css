@@ -95,7 +95,7 @@ html {
 
 .topLanding {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
     background-repeat: repeat-x;
     height: 250px;
     width: 100%;
@@ -121,7 +121,7 @@ html {
 
 .footLanding {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/background blanco inferior-42.svg");
     bottom: -2px;
     z-index: 1;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ html {
 }
 
 .logo {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo pequeño marron y verde-17.svg");
     position: relative;
     height: 100px;
     width: 15%;
@@ -147,7 +147,7 @@ html {
 }
 
 .menu {
-    background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg');
+    background-image: url('../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo iconografico-16.svg');
     position: relative;
     height: 90px;
     width: 15%;
@@ -223,7 +223,7 @@ html {
 
 .theFarmTop {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background blanco-22.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background blanco-22.svg");
     background-repeat: repeat-x;
     height: 20%;
     width: 100%;
@@ -318,7 +318,7 @@ html {
 
 .objectives-top {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background marron objetivos estrategicos-01.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/la granja/background marron objetivos estrategicos-01.svg");
     background-repeat: repeat-x;
     height: 200px;
     width: 100%;
@@ -330,7 +330,7 @@ html {
 
 .objectives-foot {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
     height: 120px;
     transform: rotate(180deg);
@@ -366,7 +366,7 @@ html {
 
 .reservations-top {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
     height: 120px;
     width: 100%;
@@ -391,7 +391,7 @@ html {
 
 .flowers-top {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background rosa-24.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background rosa-24.svg");
     height: 200px;
     width: 100%;
     top: -20px;
@@ -403,7 +403,7 @@ html {
 
 .flowers-footer {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/reservaciones/background blanco-23.svg");
     background-repeat: repeat-x;
     transform: rotate(180deg);
     height: 200px;
@@ -428,7 +428,7 @@ html {
     top: -40px;
     left: 0px;
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun blanco.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun blanco.svg");
     height: 157px;
     transform: rotate(180deg) rotate(180deg);
     width: 100%;
@@ -445,7 +445,7 @@ html {
 }
 
 .next-events-button {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/matas de boton-29.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/matas de boton-29.svg");
     width: 10%;
     height: 300px;
     position: absolute;
@@ -475,13 +475,13 @@ html {
 }
 
 .parrot-container {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/imagenes/DSC07016 (1).JPG");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/imagenes/DSC07016 (1).JPG");
 }
 
 .parrot-top {
     top: -22px;
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun marron-28.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/proximos eventos/backgroun marron-28.svg");
     height: 220px;
     transform: rotate(180deg) rotate(180deg);
     width: 100%;
@@ -494,7 +494,7 @@ html {
 
 .parrot-footer {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
     background-repeat: repeat-x;
     height: 200px;
     width: 100%;
@@ -506,7 +506,7 @@ html {
 
 .form-top {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/contacto/backgroun blanco-31.svg");
     background-repeat: repeat-x;
     height: 200px;
     width: 100%;
@@ -604,7 +604,7 @@ textarea {
 .back2,
 .back3 {
     position: absolute;
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 1-33.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 1-33.svg");
     width: 100%;
     height: 500px;
     bottom: -50%;
@@ -615,12 +615,12 @@ textarea {
 }
 
 .back2 {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 2-34.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 2-34.svg");
     z-index: 2;
 }
 
 .back3 {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 3-32.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/footer/background 3-32.svg");
     z-index: 3;
     padding-top: 17%;
 }
@@ -700,7 +700,7 @@ div.row.justify-content-start>ul>li,
     left: -50px;
     height: 100%;
     width: 150px;
-    content: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/linea verde de menu-18.svg");
+    content: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/linea verde de menu-18.svg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
@@ -728,23 +728,23 @@ div.row.justify-content-start>ul>li,
 }
 
 .the-farm-icon {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono la granja-08.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono la granja-08.svg");
 }
 
 .reservations-icon {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono reservaciones-09.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono reservaciones-09.svg");
 }
 
 .events-icon {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono proximos eventos-10.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono proximos eventos-10.svg");
 }
 
 .gallery-icon {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono galeri-11.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono galeri-11.svg");
 }
 
 .contact-icon {
-    background-image: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono contacto-12.svg");
+    background-image: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio aislada/ICONOS MENU/icono contacto-12.svg");
 }
 
  ::-webkit-scrollbar-track {
@@ -852,7 +852,7 @@ div.row.justify-content-start>ul>li,
 }
 
 .brown-background {
-    background-image: url('../MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/cuadro datos de la reservacion.svg');
+    background-image: url('../images/MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/cuadro datos de la reservacion.svg');
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -939,7 +939,7 @@ div.row.justify-content-start>ul>li,
 }
 
 .submitButon::after {
-    content: url("../MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/linea reservar.svg");
+    content: url("../images/MEDIDAS DE LA WEB PAGE LA GUACHA/datos de la reservacion/linea reservar.svg");
     margin-left: 20px;
 }
 
