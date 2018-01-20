@@ -3879,7 +3879,7 @@ function request() {
             }
         }
     });
-}
+};
 $(document).ready(function() {
     menu();
     player();

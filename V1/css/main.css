@@ -867,6 +867,11 @@ div.row.justify-content-start>ul>li,
     color: white;
     margin-top: 20px;
     font-size: 1.5em;
+    bottom: 100px;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .form-reserve,
@@ -1454,7 +1459,7 @@ height: 125%;
         letter-spacing: 4px;
     }
     .tittle-middle {
-        font-size: 4em
+        font-size: 3.5em;
     }
     .objectives-top {
         height: 100px;
@@ -1888,3 +1893,20 @@ ul#GalleryCarousell>li {
 .close {
     color: white !important;
 }
+
+
+/* Galaxy S5 portrait and landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* Galaxy S5 portrait */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Galaxy S5 landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {}

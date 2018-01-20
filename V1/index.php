@@ -2,8 +2,10 @@
 <html>
 
 <head>
-    <title>Granja Ecoturistica la guacha V-1.0</title>
+    <title>La Guacha</title>
     <meta charset="UTF-8">
+    <meta name="keyword" content="la guacha, granja ecoturistica, granja, guacha">
+    <meta name="description" content="Granja ecoturistica la guacha ... Disfruta lo natural... 96, Avenida Principal El Muco, Carúpano, Sucre, Venezuela, ven y conocenos">
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <link rel="stylesheet" href="css/main.min.css">
@@ -40,8 +42,8 @@
             <a href="#" id="menu-icon-trigger"><span class="menu pull-left link"></span></a>
         </div>
         <div class="overlay text-center" id="overlay-carousel">
-            <img class="Main-Logo img-fluid" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
-            <h2 class="slogan" data-aos="fade-in" data-aos-delay="3000" data-aos-easing="ease-in">Disfruta lo natural...</h2>
+            <img class="Main-Logo img-fluid" data-aos="fade-in" id="logoGuacha" data-aos-delay="500" data-aos-easing="ease-in" src="images/MEDIDAS DE LA WEB PAGE LA GUACHA/SVG/pagina de inicio/logo blaco principal-15.svg" alt="LaGuacha">
+            <h2 class="slogan" data-aos="fade-in" data-aos-delay="3000" data-aos-easing="ease-in" data-aos-anchor="#logoGuacha">Disfruta lo natural...</h2>
         </div>
         <div class="footLanding">
             <i class="fa fa-angle-left fa-2x circle-Button left-Button main-button" aria-hidden="true" id="landing-carousel-left"></i>
@@ -77,33 +79,33 @@
                         <div class="carousel-container">
                             <div>
                                 <div class="elem">
-                                    <h1 class="Tittle">Misión</h1>
+                                    <h3 class="Tittle">Misión</h3>
                                     <p class="content"> Proporcionar un servicio de alta calidad en materia de producción agrícola y pecuaria con elevado sentido social, propiciando la conservación ambiental y la generación de espacios para el disfrute turístico.
                                     </p>
                                 </div>
                                 <div class="elem">
-                                    <h1 class="Tittle">Visión</h1>
+                                    <h3 class="Tittle">Visión</h3>
                                     <p class="content">
                                         Consolidarnos como una organización modelo a nivel nacional e internacional debido a la integración armónica de la actividad productiva del campo con elementos esencialmente ecológicos y de promoción turística, privilegiando el uso de los recursos locales
                                         y la autosostenibilidad.
                                     </p>
                                 </div>
                                 <div class="elem">
-                                    <h1 class="Tittle">Antecedentes</h1>
+                                    <h3 class="Tittle">Antecedentes</h3>
                                     <p class="content">
                                         Como alternativa a una sociedad dominada por el estrés del día a día, donde lo artificial, lo virtual y la inmediatez restan peso a la esencia de lo autóctono, al disfrute real de lo que te rodea, de lo que está ahí en el lugar y momento justo donde te
                                         encuentras por la idea básica de disfrutar lo natural, aprender y crecer con ello, surge el proyecto de Granja Ecoturística La Guacha.
                                     </p>
                                 </div>
                                 <div class="elem">
-                                    <h1 class="Tittle">Principios</h1>
+                                    <h3 class="Tittle">Principios</h3>
                                     <p class="content">
                                         Nuestro servicio está basado en la esmerada atención al cliente, el bienestar de nuestros trabajadores, el aporte social, el cumplimiento del ordenamiento legal y el crecimiento constante, aplicando los principios de: Responsabilidad, Disciplina, Respeto,
                                         Tolerancia, Honestidad, Calidez y Solidaridad.
                                     </p>
                                 </div>
                                 <div class="elem">
-                                    <h1 class="Tittle">Situación Actual</h1>
+                                    <h3 class="Tittle">Situación Actual</h3>
                                     <p class="content">
                                         El proyecto se encuentra hoy en día en la etapa de implantación y genera más de 21 empleos directos, beneficiando a familias locales. En su período de mayor actividad comercial se espera que se supere cuatro (4) veces la cifra de empleados, considerando
                                         los diferentes turnos del plan de trabajo.
@@ -420,7 +422,7 @@
                                 <div class="green-bottom height-input">
                                     <label class="sr-only" for="information">textarea</label>
                                     <div>
-                                        <textarea name="information" id="information" class="form-control no-background" placeholder="Coloque aqui información adicional referente a su reservación..." rows="2"></textarea>
+                                        <textarea name="information" id="information" class="form-control no-background" placeholder="Coloque aquí información adicional referente a su reservación..." rows="2"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +519,7 @@
                                 <div class="form-group row align-items-top">
                                     <label for="information" class="col-3 col-lg-3 col-md-4 col-sm-12 col-form-label">Mensaje</label>
                                     <div class="col-12 col-md-8 col-lg-9 col-sm-12" id="error-input-information-contact">
-                                        <textarea class="form-control" name="information" id="exampleTextarea" placeholder="coloque aqui informacion referente a su consulta..." rows="6"></textarea>
+                                        <textarea class="form-control" name="information" id="exampleTextarea" placeholder="Coloque aquí información referente a su consulta..." rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">                  
@@ -550,7 +552,7 @@
                     <div class="col-md-3 col-6">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <h1>La Granja</h1>
+                                <h1>Granja</h1>
                             </div>
                         </div>
                         <div class="row justify-content-start">
@@ -734,6 +736,37 @@
     </div>
     <!--   <div id="player"></div> -->
     <!--   <i class="fa fa-volume-up pull-right audio" id="audio" aria-hidden="true"></i> -->
+
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "http://www.laguacha.net",
+    "name": "La Guacha Granja ecoturistica",
+    "logo": "http://www.laguacha.net/favicon.png",
+    "sameAs": [
+        "https://www.instagram.com/laguacha.granjaecoturistica/",
+        "https://twitter.com/laguachaeco",
+        "https://www.facebook.com/laguacha.granjaecoturistica/"
+    ],
+    "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "96, Avenida Principal El Muco",
+            "addressLocality": "Carupano",
+            "addressRegion": "Sucre",
+            "postalCode": "",
+            "addressCountry": "VE"
+        },       
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+58-414-793-70-84",
+        "contactType": "Customer service",
+        "areaServed" : "VE",
+        "availableLanguage":"Spanish"
+    },
+    "email":"info@laguacha.net"
+}
+</script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
