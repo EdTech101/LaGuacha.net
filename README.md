@@ -6,7 +6,13 @@ Currenly hosted on http://laguacha.net/
 
 # Some Screenshots
 
-![alt text](https://raw.githubusercontent.com/EdTech101/LaGuacha.net/master/V1/2017-09-07.jpg)
+Landing
+
+![alt text](https://preview.ibb.co/npzBko/laguachascreen1.png)
+
+Menu
+
+![alt text](https://preview.ibb.co/eAaLBT/laguachascreen2.png)
 
 Responsive Section 320 X 618
 
