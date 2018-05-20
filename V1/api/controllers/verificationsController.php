@@ -3,7 +3,8 @@ function verifications($guid){
         $guid = test_input($guid);     
         try
         {       
-            $db = new PDO("mysql:host=localhost;dbname=laguacha_api_db", "laguacha_admin", "Alfaomega543!");
+            /* Replace DB_NAME, username and Password */
+            $db = new PDO("mysql:host=localhost;dbname=DB_NAME", "username", "Password");
         }
         catch(exception $e)
         {
