@@ -6,7 +6,7 @@ Currenly hosted on http://laguacha.net/
 
 # Some Screenshots
 
-![alt text](https://raw.githubusercontent.com/EdTech101/LaGuacha.net/blob/master/V1/2017-09-07.jpg)
+![alt text](https://raw.githubusercontent.com/EdTech101/LaGuacha.net/master/V1/2017-09-07.jpg)
 
 Responsive Section 320 X 618
 
