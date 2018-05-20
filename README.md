@@ -16,7 +16,7 @@ Menu
 
 Responsive Section 320 X 618
 
-![alt text](https://image.ibb.co/hT3CQo/laguachascreen3.png)
+![alt text](https://image.ibb.co/h0k3WT/laguachascreen4.png" alt="laguachascreen4)
 
 # Design
   Made by Yuledy Jimenez. 
